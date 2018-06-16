@@ -1,0 +1,55 @@
+@import "./variables";
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 420px;
+  max-width: 1357px;
+  margin: 0 auto;
+  padding: 0 $page-container-padding;
+  background-color: #ffffff;
+  box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+  border-radius: 10px;
+  margin-top: -150px;
+  &__section {
+    width: 300px;
+    height: 300px;
+  }
+  &__section_title, &__section_description {
+    color: #031d5b;
+  }
+  &__section_title {
+    font-family: "Rubik Light";
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 26px;
+  }
+  &__section_line {
+    width: 60px;
+    height: 4px;
+    background-color: #1fdb84;
+    margin: 0;
+    margin-top: 26px;
+  }
+  &__section_description {
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 26px;
+  }
+  &__section-secure-transaction_img {
+    background-image: url("../../assets/images/secure_every_transaction.png");
+   @include  ImgPositionDimension;
+  }
+  &__section-easiest-to-use_img {
+    background-image: url("../../assets/images/easiest_to_use.png");
+    @include ImgPositionDimension;
+  }
+  &__section-fastest-mining_img {
+    background-image: url("../../assets/images/fastest_mining.png");
+    @include ImgPositionDimension
+
+  }
+}

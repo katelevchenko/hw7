@@ -1,0 +1,80 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+$navbar-height: 50px;
+$page-nav-item-margin: 36px;
+$page-nav-link-color: #ffffff;
+$logo-font-size: 26px;
+$title-font-size: 48px;
+
+.page-header {
+    background-color: $background-dark;
+}
+.page-nav {
+  height: $navbar-height;
+  display: flex;
+  justify-content: space-between;
+  @include pageContainer;
+  &_toggle {
+      display: none;
+     }
+  &__logo {
+    font-family: "Rubik Regular";
+    color: $page-nav-link-color;
+    font-size: $logo-font-size;
+    font-weight: 200;
+    @include FlexCenterVertical;
+  }
+  &_menu {
+    display: flex;
+    justify-content: center;
+  }
+  &_item {
+    margin: 0 $page-nav-item-margin;
+    background-color: #1fdb84;
+  }
+  &_link {
+    color: $page-nav-link-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 38px;
+  }
+}
+.account-panel {
+  display: flex;
+  align-items: center;
+  &_btn {
+    margin: 0;
+  }
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  @include pageContainer;
+  @include FlexCenterVertical;
+  color: $page-nav-link-color;
+  &__info {
+    margin-top: -100px;
+  }
+  &__img {
+    width: 463px;
+    height: 750px;
+    background-image: url("../../assets/images/artboard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  h1 {
+    font-family: "Rubik Light";
+    font-size: $title-font-size;
+    font-weight: 100;
+  }
+  &__info_description {
+    font-family: "Rubik Light";
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 40px;
+  }
+}

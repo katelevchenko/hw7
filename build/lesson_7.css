@@ -1,0 +1,216 @@
+.page-header {
+  background-color: #313a5a; }
+
+.page-nav {
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1257px;
+  margin: 0 auto;
+  padding: 0 16px; }
+  .page-nav_toggle {
+    display: none; }
+  .page-nav__logo {
+    font-family: "Rubik Regular";
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 200;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-nav_menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-nav_item {
+    margin: 0 36px;
+    background-color: #1fdb84; }
+  .page-nav_link {
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 38px; }
+
+.account-panel {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .account-panel_btn {
+    margin: 0; }
+
+.banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1257px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #ffffff; }
+  .banner__info {
+    margin-top: -100px; }
+  .banner__img {
+    width: 463px;
+    height: 750px;
+    background-image: url(assets/images/artboard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .banner h1 {
+    font-family: "Rubik Light";
+    font-size: 48px;
+    font-weight: 100; }
+  .banner__info_description {
+    font-family: "Rubik Light";
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 40px; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 12px;
+  font-family: "Rubik Light";
+  font-weight: 100; }
+
+body, ul, ol, h1, h2, h3, h4, h5, hr, p {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 18px; }
+
+.page-header {
+  background-color: #313a5a; }
+
+.page-nav__toggle {
+  display: none; }
+
+.page-nav:hover {
+  background: white; }
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px; }
+
+.page-header {
+  background-color: #313a5a; }
+
+.page-nav {
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1257px;
+  margin: 0 auto;
+  padding: 0 16px; }
+  .page-nav_toggle {
+    display: none; }
+  .page-nav__logo {
+    font-family: "Rubik Regular";
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 200;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .page-nav_menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .page-nav_item {
+    margin: 0 36px;
+    background-color: #1fdb84; }
+  .page-nav_link {
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 38px; }
+
+.account-panel {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .account-panel_btn {
+    margin: 0; }
+
+.banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1257px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #ffffff; }
+  .banner__info {
+    margin-top: -100px; }
+  .banner__img {
+    width: 463px;
+    height: 750px;
+    background-image: url(assets/images/artboard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .banner h1 {
+    font-family: "Rubik Light";
+    font-size: 48px;
+    font-weight: 100; }
+  .banner__info_description {
+    font-family: "Rubik Light";
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 40px; }
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 16px; }
+  .btn_success {
+    background-color: #1fdb84;
+    box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6); }
+
+.CTA-btn {
+  border: none;
+  color: #ffffff;
+  padding: 19.2px 48px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 19.2px;
+  background-color: #1fdb84;
+  box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+  margin-top: 65px; }

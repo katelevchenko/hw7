@@ -1,0 +1,35 @@
+@import './variables.scss';
+@import './header.scss';
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 12px;
+    font-family: "Rubik Light";
+    font-weight: 100;
+}
+body, ul, ol, h1, h2, h3, h4, h5, hr, p {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 18px;
+}
+.page-header {
+    background-color: #313a5a;
+    height: 800px;
+}
+.page-nav__toggle {
+    display: none;
+}
+.page-nav:hover {
+    background: rgb(255, 255, 255);
+}
+a {
+    text-decoration: none;
+    color: $page-nav-link-color;
+    font-size: $base-font-size;
+}

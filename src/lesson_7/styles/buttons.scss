@@ -1,0 +1,25 @@
+@import "./variables.scss";
+.btn {
+  border: none;
+  background-color: transparent;
+  color: $btn-default-font-color;
+  padding: $base-font-size $base-font-size * 1.5;
+  border-top-left-radius: $btn-default-border-radius;
+  border-bottom-right-radius: $btn-default-border-radius;
+  font-size: $base-font-size;
+  &_success {
+    background-color: #1fdb84;
+    box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+  }
+}
+.CTA-btn {
+  border: none;
+  color: $btn-default-font-color;
+  padding: $base-font-size * 1.2 $base-font-size * 3;
+  border-top-left-radius: $btn-default-border-radius * 2;
+  border-bottom-right-radius: $btn-default-border-radius * 2;
+  font-size: $base-font-size * 1.2;
+  background-color: #1fdb84;
+  box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+  margin-top: 65px;
+}
