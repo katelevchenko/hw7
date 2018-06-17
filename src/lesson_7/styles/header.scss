@@ -60,10 +60,12 @@ $title-font-size: 48px;
   &__img {
     width: 463px;
     height: 750px;
+    position: relative;
     background-image: url("../../assets/images/artboard.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 1;
   }
   h1 {
     font-family: "Rubik Light";
