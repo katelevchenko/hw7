@@ -64,10 +64,12 @@
   .banner__img {
     width: 463px;
     height: 750px;
+    position: relative;
     background-image: url(assets/images/artboard.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    z-index: 1; }
   .banner h1 {
     font-family: "Rubik Light";
     font-size: 48px;
@@ -87,7 +89,7 @@ html {
   font-family: "Rubik Light";
   font-weight: 100; }
 
-body, ul, ol, h1, h2, h3, h4, h5, hr, p {
+body, ul, ol, h1, h2, h3, h4, h5, hr, p, figure {
   padding: 0;
   margin: 0; }
 
@@ -98,7 +100,8 @@ li {
   padding: 18px; }
 
 .page-header {
-  background-color: #313a5a; }
+  background-color: #313a5a;
+  height: 800px; }
 
 .page-nav__toggle {
   display: none; }
@@ -177,10 +180,12 @@ a {
   .banner__img {
     width: 463px;
     height: 750px;
+    position: relative;
     background-image: url(assets/images/artboard.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    z-index: 1; }
   .banner h1 {
     font-family: "Rubik Light";
     font-size: 48px;
@@ -214,3 +219,60 @@ a {
   background-color: #1fdb84;
   box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
   margin-top: 65px; }
+
+.benefits {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+  height: 420px;
+  max-width: 1357px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+  border-radius: 10px;
+  margin-top: -100px;
+  z-index: 2; }
+  .benefits__section {
+    width: 300px;
+    height: 300px; }
+  .benefits__section_title, .benefits__section_description {
+    color: #031d5b; }
+  .benefits__section_title {
+    font-family: "Rubik Light";
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 26px; }
+  .benefits__section_line {
+    width: 60px;
+    height: 4px;
+    background-color: #1fdb84;
+    margin: 0;
+    margin-top: 26px; }
+  .benefits__section_description {
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 26px; }
+  .benefits__section-secure-transaction_img {
+    background-image: url(assets/images/secure_every_transaction.png);
+    background-repeat: no-repeat;
+    height: 72px;
+    margin: 0; }
+  .benefits__section-easiest-to-use_img {
+    background-image: url(assets/images/easiest_to_use.png);
+    background-repeat: no-repeat;
+    height: 72px;
+    margin: 0; }
+  .benefits__section-fastest-mining_img {
+    background-image: url(assets/images/fastest_mining.png);
+    background-repeat: no-repeat;
+    height: 72px;
+    margin: 0; }
