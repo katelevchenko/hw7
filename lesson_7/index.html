@@ -13,7 +13,11 @@
         <h1 class="page-nav__logo">
             <span>autocryp</span>
         </h1>
-        <button class="page-nav__toggle"></button>
+        <div id="menuToggle">
+            <input type="checkbox" class="page-nav__toggle">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
         <ul class="page-nav__menu">
             <li class="page-nav__item">
                 <a href="" class="page-nav__link">
@@ -39,11 +43,12 @@
             <li class="page-nav__item">
                 <a href="" class="page-nav__link">
         <span href="" class="page-nav__link-title">
-          Client
+          Clients
         </span>
                 </a>
             </li>
         </ul>
+        </div>
         <div class="account-panel">
             <button class="account-panel__btn btn">Login</button>
             <button class="account-panel__btn btn btn_success">Register</button>
@@ -61,29 +66,157 @@
         </div>
         <figure class="banner__img"></figure>
     </div>
-    <section class="benefits">
-        <div class="benefits__section">
-            <figure class="benefits__section-secure-transaction_img"></figure>
-            <h1 class="benefits__section_title">Secure Every Transaction</h1>
-            <figure class="benefits__section_line"></figure>
-            <p class="benefits__section_description">Your account is protected by Multifactor <br>
-                Authentication using a combination of <br>email, SMS and Google Authenticator.</p>
+</header>
+<section class="benefits">
+    <div class="benefits__section">
+        <figure class="benefits__section-secure-transaction_img"></figure>
+        <h1 class="benefits__section_title">Secure Every Transaction</h1>
+        <figure class="benefits__section_line"></figure>
+        <p class="benefits__section_description">Your account is protected by Multifactor <br>
+            Authentication using a combination of <br>email, SMS and Google Authenticator.</p>
+    </div>
+    <div class="benefits__section">
+        <figure class="benefits__section-easiest-to-use_img"></figure>
+        <h1 class="benefits__section_title">Easiest To Use</h1>
+        <figure class="benefits__section_line"></figure>
+        <p class="benefits__section_description">You only need 1 account to do all Bitcoin <br>
+            transactions whether it is buying, selling, <br> investing or trading.</p>
+    </div>
+    <div class="benefits__section">
+        <figure class="benefits__section-fastest-mining_img"></figure>
+        <h1 class="benefits__section_title">Fastest Mining</h1>
+        <figure class="benefits__section_line"></figure>
+        <p class="benefits__section_description">The Rupiah deposit can be processed <br>
+            instantly and Rupiah withdrawal is <br> processed in less than 1 business day.</p>
+    </div>
+</section>
+<section class="background">
+    <h1 class="paid-plan-proposition__free-trial-section_info">Paid plan starts with a 7-day free trial, No credit <br>card required</h1>
+    <section class="paid-plan-proposition">
+            <button class="paid-plan-proposition__free-trial-section_btn-m"><span class="btn-m">MONTHLY</span></button>
+            <button class="paid-plan-proposition__free-trial-section_btn-y"><span class="btn-y">YEARLY - 2 MONTH FREE</span></button>
+    </section>
+    <section class="paid-plan-sections">
+        <div class="paid-plan-section_starter">
+            <p class="paid-plan-section__title">Starter</p>
+            <p class="paid-plan-section__price">$10</p>
+            <p class="paid-plan-section__reqs">Per Month</p>
+            <p class="paid-plan-section__prop-info">1 Pixel ID*<br>URL</p>
+            <p class="paid-plan-section__info">Up to 200 shortened links /<br> month</p>
+            <p class="paid-plan-section__info-empty"></p>
+            <button class="paid-plan-section CTA-btn">START FREE TRIAL</button>
         </div>
-        <div class="benefits__section">
-            <figure class="benefits__section-easiest-to-use_img"></figure>
-            <h1 class="benefits__section_title">Easiest To Use</h1>
-            <figure class="benefits__section_line"></figure>
-            <p class="benefits__section_description">You only need 1 account to do all Bitcoin <br>
-                transactions whether it is buying, selling, <br> investing or trading.</p>
+        <div class="paid-plan-section_professional">
+            <span class="rectangle_blue"></span>
+            <p class="paid-plan-section__title">Professional</p>
+            <p class="paid-plan-section__price">$29</p>
+            <p class="paid-plan-section__reqs">Per Month</p>
+            <p class="paid-plan-section__prop-info">5 Pixel ID*<br>1 Custom URL</p>
+            <p class="paid-plan-section__info">Up to 1,000 shortened links /<br> month</p>
+            <p class="paid-plan-section__info-add">5 Team Member</p>
+            <button class="paid-plan-section CTA-btn">START FREE TRIAL</button>
         </div>
-        <div class="benefits__section">
-            <figure class="benefits__section-fastest-mining_img"></figure>
-            <h1 class="benefits__section_title">Fastest Mining</h1>
-            <figure class="benefits__section_line"></figure>
-            <p class="benefits__section_description">The Rupiah deposit can be processed <br>
-                instantly and Rupiah withdrawal is <br> processed in less than 1 business day.</p>
+        <div class="paid-plan-section_business">
+            <p class="paid-plan-section__title">Business</p>
+            <p class="paid-plan-section__price">$49</p>
+            <p class="paid-plan-section__reqs">Per Month</p>
+            <p class="paid-plan-section__prop-info">Unlimited Pixels ID<br>Unlimited Custom URL</p>
+            <p class="paid-plan-section__info">Unlimited shortened links / <br> month</p>
+            <p class="paid-plan-section__info-add">Unlimited Member</p>
+            <button class="paid-plan-section CTA-btn">START FREE TRIAL</button>
         </div>
     </section>
-</header>
+    <div class="customers-feedback">
+            <div class="customers-feedback__info_quotmarks">
+                <figure class="customers-feedback__info_quotmark"></figure>
+                <figure class="customers-feedback__info_quotmark"></figure>
+            </div>
+            <h1 class="customers-feedback__info_title">What<br>Customers Say</h1>
+    </div>
+    <section class="customers-feedback-rectangle">
+            <figure class="rectangle-color"></figure>
+    </section>
+    <section class="customers-feedback-sections">
+        <div class="customers-feedback-sections-feedback1">
+            <div class="customers-feedback-sections__quotmarks">
+                <figure class="customers-feedback-sections__quotmark1"></figure>
+                <figure class="customers-feedback-sections__quotmark1"></figure>
+            </div>
+            <p class="customers-feedback-sections__info">"I started driving with Uber because I <br> liked the idea that my
+                own car could<br> make me money. After just about a <br>couple weeks, I saw that this was <br>something I wanted to
+                do<br> permanently."
+            </p>
+            <p class="customers-feedback-sections__name">Brandon Roger /
+                <span class="customers-feedback-sections__company-name">OWW Studio</span></p>
+        </div>
+        <div class="customers-feedback-sections-feedback2">
+            <div class="customers-feedback-sections__quotmarks">
+                <figure class="customers-feedback-sections__quotmark2"></figure>
+                <figure class="customers-feedback-sections__quotmark2"></figure>
+            </div>
+            <p class="customers-feedback-sections__info2">"I wanted something where I<br>could meet new people and get<br>
+                out of the house. Uber has <br>plus I’m seeing new parts of the<br>something I wanted to
+                do<br>city I’ve never seen before!"
+            </p>
+            <p class="customers-feedback-sections__name2">Brandon Roger /
+                <span class="customers-feedback-sections__company-name2">OWW Studio</span></p>
+        </div>
+    </section>
+    <div class="customers-feedback-circles">
+        <figure class="customers-feedback-circle1"></figure>
+        <figure class="customers-feedback-circle2"></figure>
+        <figure class="customers-feedback-circle1"></figure>
+        <figure class="customers-feedback-circle1"></figure>
+        <figure class="customers-feedback-circle1"></figure>
+    </div>
+    <section class="platforms">
+        <h1 class="platforms__title">WORKS WITH ANY PLATFORM
+        </h1>
+    </section>
+    <div class="platforms__logos">
+               <div class="platforms__logo-amazon"></div>
+               <div class="platforms__logo-etsy"></div>
+               <div class="platforms__logo-clickbank"></div>
+               <div class="platforms__logo-medium"></div>
+               <div class="platforms__logo-youtube"></div>
+               <div class="platforms__logo-kickstarter"></div>
+    </div>
+    <section class="page-nav-copy">
+        <small class="page-nav-footer__copyright">©<time datetime="2018"> 2018</time> autocryp All Rights Reserved</small>
+    </section>
+    <section class="page-nav-footer">
+        <ul class="page-nav-footer__menu">
+            <li class="page-nav-footer__item">
+                <a href="" class="page-nav-footer__link">
+        <span href="" class="page-nav-footer__link-title">
+          Benefit <span class="slash">/</span>
+        </span>
+                </a>
+            </li>
+            <li class="page-nav-footer__item">
+                <a href="" class="page-nav-footer__link">
+        <span href="" class="page-nav-footer__link-title">
+          Pricing <span class="slash">/</span>
+        </span>
+                </a>
+            </li>
+            <li class="page-nav-footer__item">
+                <a href="" class="page-nav-footer__link">
+        <span href="" class="page-nav-footer__link-title">
+          Testimonials <span class="slash">/</span>
+        </span>
+                </a>
+            </li>
+            <li class="page-nav-footer__item">
+                <a href="" class="page-nav-footer__link">
+        <span href="" class="page-nav-footer__link-title">
+          Clients
+        </span>
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </section>
+</section>
 <script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="lesson_7.js"></script></body>
 </html>
