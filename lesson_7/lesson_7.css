@@ -593,36 +593,36 @@ a {
   margin-top: 50px;
 }
 .platforms__logo-amazon {
-  background-image: url("../../../wa_group_1905-master/katelevchenko.github.io/lesson_7/assets/images/amazon_logo.png");
+  background-image: url(assets/images/amazon_logo.png);
   background-repeat: no-repeat;
   width: 132px;
   height: 42px;
 }
 .platforms__logo-etsy {
-   background-image: url("../../../wa_group_1905-master/katelevchenko.github.io/lesson_7/assets/images/etsy_logo.png");
+   background-image: url(assets/images/etsy_logo.png);
    background-repeat: no-repeat;
    width: 90px;
    height: 44px;
  }
 .platforms__logo-clickbank {
-   background-image: url("../../../wa_group_1905-master/katelevchenko.github.io/lesson_7/assets/images/clickbank_logo.png");
+   background-image: url(assets/images/clickbank_logo.png);
    background-repeat: no-repeat;
    width: 148px;
    height: 30px;
  }
 .platforms__logo-medium {
-  background-image: url("../../../wa_group_1905-master/katelevchenko.github.io/lesson_7/assets/images/medium_logo.png");
+  background-image: url(assets/images/medium_logo.png);
   background-repeat: no-repeat;
   width: 54px;
   height: 47px;
 }
 .platforms__logo-youtube {
-  background-image: url("../../../wa_group_1905-master/katelevchenko.github.io/lesson_7/assets/images/youtube_logo.png");
+  background-image: url(assets/images/youtube_logo.png);
   background-repeat: no-repeat;
   width: 162px;
   height: 38px;
 }.platforms__logo-kickstarter {
-   background-image: url("../../../wa_group_1905-master/katelevchenko.github.io/lesson_7/assets/images/kickstarter_logo.png");
+   background-image: url(assets/images/kickstarter_logo.png);
    background-repeat: no-repeat;
    width: 228px;
    height: 28px;
