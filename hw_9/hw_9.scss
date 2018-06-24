@@ -1,0 +1,89 @@
+.container {
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+}
+.traffic-lights {
+  width: 229px;
+  height: 680px;
+  border-radius: 300px;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.notification-bar {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px rgb(30, 30, 30);
+  background-color: rgb(109, 109, 109);
+}
+.notification-bar_active {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px rgb(30, 30, 30);
+  background-color: rgb(241, 0, 5);
+}
+.notification-bar__btn {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+.notification-bar-yellow {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px rgb(30, 30, 30);
+  background-color: rgb(109, 109, 109);
+}
+.notification-bar-yellow_active {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px rgb(30, 30, 30);
+  background-color: rgb(244, 245, 0);
+}
+.notification-bar-yellow__btn {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+.notification-bar-green {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px rgb(30, 30, 30);
+  background-color: rgb(109, 109, 109);
+}
+.notification-bar-green_active {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px rgb(30, 30, 30);
+  background-color: rgb(22, 234, 29);
+}
+.notification-bar-green__btn {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+.notification-bar {
+  &__message {
+    display: none;
+  }
+  &_active {
+    .notification-bar__message {
+      display: block;
+    }
+  }
+}
