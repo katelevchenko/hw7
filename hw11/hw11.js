@@ -85,7 +85,4 @@ class Machine {
             return food.slice();
         };
     }
-
-
-    }
 }
