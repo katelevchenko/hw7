@@ -1,0 +1,20 @@
+.accordionadd {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 700px;
+    &__out {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 700px;
+    margin-left: -20px;
+}
+    &__btn {
+        border: none;
+        background-color: #035eb2;
+        color: #ffffff;
+        width: 100px;
+    }
+}

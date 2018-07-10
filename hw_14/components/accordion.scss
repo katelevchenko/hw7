@@ -1,0 +1,41 @@
+* {
+    font-family: Arial, HelveticaNeueCyr, sans-serif;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: transparent;
+        &__button {
+        background-color: rgb (243, 243, 243);
+        color: #818396;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.3s;
+    }
+    &__panel {
+        color: transparent;
+    }
+    &_active {
+        .accordion__button{
+            background-color: #818396;
+            color: #ffffff;
+        }
+        .accordion__panel {
+            padding: 30px;
+            background-color: #f3f3f3;
+            font-size: 16px;
+            line-height: 34px;
+            color: #818396;
+        }
+    
+    }   
+    .accordion__button:hover {
+        background-color: #818396;
+        color: #ffffff;
+    }
+}
