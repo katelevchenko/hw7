@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 328);
+/******/ 	return __webpack_require__(__webpack_require__.s = 341);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9035,27 +9035,31 @@ module.exports = function (regExp, replace) {
 
 /***/ }),
 /* 327 */,
-/* 328 */
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(329);
+module.exports = __webpack_require__(342);
 
 
 /***/ }),
-/* 329 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(330);
-
-/***/ }),
-/* 330 */
+/* 342 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: SyntaxError: D:/katelevchenko.github.io/src/hw10/hw10.js: Unexpected character '«' (45:10)\n\n\u001b[0m \u001b[90m 43 | \u001b[39m    \u001b[33mJohn\u001b[39m\u001b[33m:\u001b[39m \u001b[35m400\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 44 | \u001b[39m    \u001b[33mJack\u001b[39m\u001b[33m:\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 | \u001b[39m    test\u001b[33m:\u001b[39m «asdasdasd»\n \u001b[90m    | \u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 | \u001b[39m}\u001b[33m;\u001b[39m\n \u001b[90m 47 | \u001b[39m\n \u001b[90m 48 | \u001b[39m\u001b[36mvar\u001b[39m sum \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m \u001b[90m// если объект пустой\u001b[39m\u001b[0m\n");
 
 /***/ })
 /******/ ]);

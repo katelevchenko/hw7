@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 328);
+/******/ 	return __webpack_require__(__webpack_require__.s = 341);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9035,27 +9035,150 @@ module.exports = function (regExp, replace) {
 
 /***/ }),
 /* 327 */,
-/* 328 */
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(329);
+module.exports = __webpack_require__(342);
 
 
 /***/ }),
-/* 329 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+// // Задание 7
+//
+// function Animal(weight, speed) {
+//     this.name = weight;
+//     this.name = speed;
+//     this.sound = sounding;
+// }
+//
+// const animal = new Animal('Horse', 500);
+// const animal2 = new Animal('Bird', 1);
+//
+//
+// animal.sound();
+// animal2.sound();
+//
+//
+// function sounding() {
+//     console.log(this);
+//     console.log('Neigh! ' + this.name, ' makes a sound like that');
+//     console.log('Quack! ' + this.name, ' makes a sound like that');
+// }
+//
+//
+// // Задание 7.1
+//
+// 'use strict';
+//
+// class Machine {
+//     constructor(power) {
+//         this.power = power;
+//     }
+//
+//     function Machine() {
+//         this.enabled = false;
+//
+//         this.enable = function () {
+//             this.enabled = true;
+//         };
+//         this.disable = function () {
+//             this.enabled = false;
+//         }
+//     }
+// }
+//
+//
+//
+//
+// // Задание 7.2
+//
+// 'use strict';
+// class Machine {
+//     constructor (power, food) {
+//         this.power = power;
+//         this.food = food;
+//     }
+//
+//     function Machine() {
+//         this._enabled = false;
+//
+//         this.enable = function() {
+//             this._enabled = true;
+//         };
+//
+//         this.disable = function() {
+//             this._enabled = false;
+//         }
+//     }
+//
+//     function Fridge(power, food) {
+//         Machine.apply(this, arguments);
+//
+//         this.addFood = function() {
+//             if (!this._enabled) {
+//                 return Error('Ошибка, холодильник выключен');
+//             }
+//             if (food.length + arguments.length > this.power) {
+//                 return Error('Ошибка, слишком много еды');
+//             }
+//             for (var i = 0; i < arguments.length; i++) {
+//                 food.push(arguments[i]);
+//             }
+//         };
+//
+//         this.getFood = function() {
+//             return food.slice();
+//         };
+//     }
+// }
+//
+//
+//
+//
+// // Car
+//
+// 'use strict';
+//
+// function Car (speed, acceleration) {
+//     this.speed = speed;
+//     this.acceleration = acceleration;
+//     this.start = function starting() {
+//         this._start = false;
+//
+//         this.start = function() {
+//             this._start= true;
+//         };
+//
+//         this.secure = function() {
+//             this._start = false;
+//         }
+//     }
+// }
+//
+// function SportCar(speed, acceleration) {
+//     Car.apply(this, arguments);
+// }
+// function Sedan(speed, acceleration) {
+//     Car.apply(this, arguments);
+// }
 
-
-__webpack_require__(330);
-
-/***/ }),
-/* 330 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

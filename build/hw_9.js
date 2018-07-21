@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 328);
+/******/ 	return __webpack_require__(__webpack_require__.s = 336);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9035,24 +9035,78 @@ module.exports = function (regExp, replace) {
 
 /***/ }),
 /* 327 */,
-/* 328 */
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(329);
+module.exports = __webpack_require__(337);
 
 
 /***/ }),
-/* 329 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(330);
+__webpack_require__(338);
+
+function notificationBar() {
+
+    var notificationBarElement = document.querySelector('.notification-bar');
+    var control = document.querySelector('.notification-bar__btn');
+
+    console.log(control);
+    console.log(notificationBarElement);
+
+    function toggleMessage() {
+        notificationBarElement.classList.toggle('notification-bar_active');
+    }
+    control.addEventListener('click', toggleMessage);
+}
+
+notificationBar();
+
+function notificationBarYellow() {
+    var notificationBarYellowElement = document.querySelector('.notification-bar-yellow');
+    var control = document.querySelector('.notification-bar-yellow__btn');
+
+    console.log(control);
+    console.log(notificationBarYellowElement);
+
+    function toggleMessage() {
+        notificationBarYellowElement.classList.toggle('notification-bar-yellow_active');
+    }
+    control.addEventListener('click', toggleMessage);
+}
+
+notificationBarYellow();
+
+function notificationBarGreen() {
+    var notificationBarGreenElement = document.querySelector('.notification-bar-green');
+    var control = document.querySelector('.notification-bar-green__btn');
+
+    console.log(control);
+    console.log(notificationBarGreenElement);
+
+    function toggleMessage() {
+        notificationBarGreenElement.classList.toggle('notification-bar-green_active');
+    }
+    control.addEventListener('click', toggleMessage);
+}
+
+notificationBarGreen();
 
 /***/ }),
-/* 330 */
+/* 338 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

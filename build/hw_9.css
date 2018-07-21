@@ -1,0 +1,87 @@
+.container {
+  max-width: 1700px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.traffic-lights {
+  width: 229px;
+  height: 680px;
+  border-radius: 300px;
+  background-color: #1e1e1e;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.notification-bar {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px #1e1e1e;
+  background-color: #6d6d6d; }
+
+.notification-bar_active {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px #1e1e1e;
+  background-color: #f10005; }
+
+.notification-bar__btn {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none; }
+
+.notification-bar-yellow {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px #1e1e1e;
+  background-color: #6d6d6d; }
+
+.notification-bar-yellow_active {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px #1e1e1e;
+  background-color: #f4f500; }
+
+.notification-bar-yellow__btn {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none; }
+
+.notification-bar-green {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px #1e1e1e;
+  background-color: #6d6d6d; }
+
+.notification-bar-green_active {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: solid 19px #1e1e1e;
+  background-color: #16ea1d; }
+
+.notification-bar-green__btn {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none; }
+
+.notification-bar__message {
+  display: none; }
+
+.notification-bar_active .notification-bar__message {
+  display: block; }

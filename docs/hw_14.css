@@ -1,0 +1,82 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e2d31;
+  cursor: pointer; }
+
+.accordion {
+  background-color: #d8d6db;
+  width: 700px;
+  padding: 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.3s; }
+
+.active .accordion:hover {
+  background-color: #8b878e; }
+
+.panel {
+  width: 660px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  display: none;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 30px; }
+* {
+  font-family: Arial, HelveticaNeueCyr, sans-serif; }
+
+.accordion {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0 auto;
+  background-color: transparent; }
+  .accordion__button {
+    background-color: #e6e6e8;
+    color: #818396;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    z-index: 2; }
+  .accordion__panel {
+    color: transparent; }
+  .accordion_active .accordion__button {
+    background-color: #818396;
+    color: #ffffff; }
+  .accordion_active .accordion__panel {
+    z-index: 1;
+    padding: 30px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    line-height: 34px;
+    color: #464651; }
+  .accordion .accordion__button:hover {
+    background-color: #818396;
+    color: #ffffff; }
+.accordionadd {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0 auto;
+  width: 700px; }
+  .accordionadd__out {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 700px;
+    margin-left: -20px; }
+  .accordionadd__btn {
+    border: none;
+    background-color: #035eb2;
+    color: #ffffff;
+    width: 100px; }
