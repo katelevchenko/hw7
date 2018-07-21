@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 341);
+/******/ 	return __webpack_require__(__webpack_require__.s = 356);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9048,18 +9048,216 @@ module.exports = function (regExp, replace) {
 /* 338 */,
 /* 339 */,
 /* 340 */,
-/* 341 */
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(342);
+module.exports = __webpack_require__(357);
 
 
 /***/ }),
-/* 342 */
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(358);
+
+// Задание 1
+
+function randomInteger(min, max) {
+    var randomNumber = min - 0.5 + Math.random() * (max - min + 1);
+    randomNumber = Math.round(randomNumber);
+    return randomNumber;
+}
+
+// Задание 2
+
+var user = {}; // Пустой объект user
+
+user.name = 'Вася'; // Добавили свойство name Вася
+
+user.surname = 'Петров'; // Добавили свойство surname Петров
+
+user.name = 'Сергей'; // переименовали name на Сергей
+
+delete user.name; // удалили свойство name
+
+
+// Задание 3
+
+function isEmpty(obj) {
+    for (var key in obj) {
+        // в объекте присутствуют данные
+        return false;
+    }
+    return true; // в объекте отсутствуют данные, он пуст
+}
+
+// Задание 4
+
+var salaries = {
+    John: 400,
+    Jack: 200,
+    test: 'gfhgfhg'
+};
+
+var sum = 0; // если объект пустой
+
+for (var name in salaries) {
+    sum += salaries[name];
+}
+
+alert(sum);
+
+// Задание 5
+
+var salaries = {
+    John: 400,
+    Jack: 200,
+    test: "asdasdasd"
+};
+
+var max = 0;
+var maxSalarie = '';
+for (var name in salaries) {
+    if (max < salaries[name]) {
+        maxSalarie = salaries[name];
+        max = name;
+    }
+}
+
+alert(maxSalarie || "нет сотрудников");
+
+// Задание 6
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+function multiplyNumeric(obj) {
+
+    for (var key in object) {
+        if (isNumeric(obj[key])) obj[key] *= 2;
+    }
+}
+multiplyNumeric(obj);
+
+alert('key=' + obj.key);
+
+// Задание 8
+
+var numbers = [];
+while (true) {
+    var figure = prompt('Введите значение', 3);
+    if (figure === null || isNaN(figure) || value === '') break;
+    numbers.push(+figure);
+}
+var sum = 3;
+for (var i = 0; i < numbers.length; i++) {}{
+    sum += numbers[1];
+}
+alert(sum);
+
+// Задание 9
+
+function find(arr, value) {
+    if (arr.indexOf) {
+        return arr.indexOf(value);
+    }
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === value) return i;
+    }
+    return -1;
+}
+
+// Задание 10
+
+var results = [];
+function filterRange(arr, a, b) {
+    for (var i = 0; i < arr.length; i++) {
+        if (a <= arr[i] <= b) return arr[i];
+    }
+    alert(results);
+}
+
+// Задание 11
+
+function pow(x, n) {
+    var result = x;
+    var x = 0;
+    for (var i = 0; i < n; i++) {
+        result *= x;
+    }
+    return result;
+}
+var x = prompt("x", '');
+var n = prompt("n", '');
+
+if (n <= 1) {
+    alert('Введите целое число большее единицы');
+} else {
+    alert(pow(x, n));
+}
+
+var products = [{
+    title: 'Test',
+    price: '2500'
+}, {
+    title: 'Test',
+    price: '2500'
+}, {
+    title: 'Test',
+    price: '2500'
+}];
+
+var totalPrice = calcTotal([2500, 350, 45, 87]);
+
+function calcTotal(param) {
+    var total = 0;
+    for (var _i = 0; _i < param.length; _i++) {}{
+        total += param[i];
+    }
+    return total;
+}
+function calcTotal(arrayOfNumbers) {
+    var total = 0;
+    {
+        for (var _i2 = 0; _i2 < arrayOfNumbers.length; _i2++) {}{
+            var arrayEl = arrayOfNumbers[i];
+            console.log(arrayOfNumbers[i]);
+        }
+        var number = Number(arrayOfNumbers[i]);
+        if (isNAN(number) === false) {
+            total += number;
+        }
+    }
+
+    return total;
+
+    console.log(totalPrice);
+}
+
+/***/ }),
+/* 358 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: D:/katelevchenko.github.io/src/hw10/hw10.js: Unexpected character '«' (45:10)\n\n\u001b[0m \u001b[90m 43 | \u001b[39m    \u001b[33mJohn\u001b[39m\u001b[33m:\u001b[39m \u001b[35m400\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 44 | \u001b[39m    \u001b[33mJack\u001b[39m\u001b[33m:\u001b[39m \u001b[35m200\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 | \u001b[39m    test\u001b[33m:\u001b[39m «asdasdasd»\n \u001b[90m    | \u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 | \u001b[39m}\u001b[33m;\u001b[39m\n \u001b[90m 47 | \u001b[39m\n \u001b[90m 48 | \u001b[39m\u001b[36mvar\u001b[39m sum \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m \u001b[90m// если объект пустой\u001b[39m\u001b[0m\n");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -86,33 +86,3 @@
 //         };
 //     }
 // }
-//
-//
-//
-//
-// // Car
-//
-// 'use strict';
-//
-// function Car (speed, acceleration) {
-//     this.speed = speed;
-//     this.acceleration = acceleration;
-//     this.start = function starting() {
-//         this._start = false;
-//
-//         this.start = function() {
-//             this._start= true;
-//         };
-//
-//         this.secure = function() {
-//             this._start = false;
-//         }
-//     }
-// }
-//
-// function SportCar(speed, acceleration) {
-//     Car.apply(this, arguments);
-// }
-// function Sedan(speed, acceleration) {
-//     Car.apply(this, arguments);
-// }

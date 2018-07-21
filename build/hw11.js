@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 341);
+/******/ 	return __webpack_require__(__webpack_require__.s = 359);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9048,15 +9048,33 @@ module.exports = function (regExp, replace) {
 /* 338 */,
 /* 339 */,
 /* 340 */,
-/* 341 */
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(342);
+module.exports = __webpack_require__(360);
 
 
 /***/ }),
-/* 342 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9147,36 +9165,6 @@ module.exports = __webpack_require__(342);
 //             return food.slice();
 //         };
 //     }
-// }
-//
-//
-//
-//
-// // Car
-//
-// 'use strict';
-//
-// function Car (speed, acceleration) {
-//     this.speed = speed;
-//     this.acceleration = acceleration;
-//     this.start = function starting() {
-//         this._start = false;
-//
-//         this.start = function() {
-//             this._start= true;
-//         };
-//
-//         this.secure = function() {
-//             this._start = false;
-//         }
-//     }
-// }
-//
-// function SportCar(speed, acceleration) {
-//     Car.apply(this, arguments);
-// }
-// function Sedan(speed, acceleration) {
-//     Car.apply(this, arguments);
 // }
 
 

@@ -1,0 +1,109 @@
+@import '../common/styles/base.scss';
+
+* {
+  font-family: Arial, HelveticaNeueCyr, sans-serif;
+  color: white;
+}
+.colors {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  margin: 0 auto;
+  align-content: space-around;
+}
+.colors__light {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+  &_red {
+    .colors__light_active{
+    background-color: rgb(247, 57, 25);
+    }
+  }
+}
+.manager__btn {
+  border: none;
+  background-color: #5b6c94;
+  height: 20px;
+  width: 70px;
+  margin-top: 80px;
+  border-radius: 1px;
+}
+
+
+
+//* {
+//  font-family: Arial, HelveticaNeueCyr, sans-serif;
+//  color: white;
+//}
+//
+//.colors__manager {
+//  display: flex;
+//  flex-direction: row;
+//  margin: 0 auto;
+//  align-content: center;
+//  cursor: pointer;
+//}
+//  .colors {
+//    &__light {
+//      width: 50px;
+//      height: 50px;
+//      padding: 10px;
+//      margin: 30px;
+//      border-radius: 50%;
+//      background-color: #d1d1d1;
+//      &_red {
+//        &.colors__light_active {
+//          background: #e73300;
+//        }
+//      }
+//      &_yellow {
+//        &.colors__light_active {
+//          background: #ffcd20;
+//        }
+//      }
+//      &_green {
+//        &.colors__light_active {
+//          background: #59bf00;
+//        }
+//      }
+//      &_blue {
+//        &.colors__light_active {
+//          background: #00d09e;
+//        }
+//      }
+//      &_orange {
+//        &.colors__light_active {
+//          background: #e06e0f;
+//        }
+//      }
+//    }
+//    &__btn {
+//      border: none;
+//      background: #5b6c94;
+//      border-radius: 1px;
+//      margin-top: 70px;
+//      &_on {
+//        &.colors__btn_active {
+//          background: #00ff00;
+//        }
+//      }
+//    }
+//    &__manager {
+//      border: none;
+//      width: 50px;
+//      height: 70px;
+//      background: #5b6c94;
+//      cursor: pointer;
+//      align-content: center;
+//      &_on {
+//        &.colors__manager_active {
+//          background: #00ff00;
+//        }
+//      }
+//    }
+//  }
+//
+//
+//
