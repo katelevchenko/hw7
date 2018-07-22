@@ -24,6 +24,7 @@ import {
   
     renderList(comments) {
       comments.forEach((item) => {
+        
         const li = document.createElement('li');
         li.textContent = item.title;
 
