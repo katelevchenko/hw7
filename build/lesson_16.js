@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 339);
+/******/ 	return __webpack_require__(__webpack_require__.s = 388);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9036,7 +9036,50 @@ module.exports = function (regExp, replace) {
 /***/ }),
 /* 327 */,
 /* 328 */,
-/* 329 */,
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Ajax = exports.Ajax = function () {
+  function Ajax() {
+    _classCallCheck(this, Ajax);
+  }
+
+  _createClass(Ajax, null, [{
+    key: 'get',
+    value: function get(url, successCallback, errorCallback) {
+      var xhr = new XMLHttpRequest();
+
+      xhr.open('GET', url);
+      xhr.send();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200 || xhr.status === 304) {
+            var comments = JSON.parse(xhr.response);
+            successCallback(comments);
+          } else {
+            errorCallback(xhr);
+          }
+        }
+      };
+    }
+  }]);
+
+  return Ajax;
+}();
+
+/***/ }),
 /* 330 */,
 /* 331 */,
 /* 332 */,
@@ -9046,73 +9089,142 @@ module.exports = function (regExp, replace) {
 /* 336 */,
 /* 337 */,
 /* 338 */,
-/* 339 */
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(340);
+module.exports = __webpack_require__(389);
 
 
 /***/ }),
-/* 340 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(341);
+var _comments = __webpack_require__(390);
 
-function notificationBar() {
+var _ajax = __webpack_require__(329);
 
-    var notificationBarElement = document.querySelector('.notification-bar');
-    var control = document.querySelector('.notification-bar__btn');
+var list = new _comments.Comments(document.querySelector('.comments'));
 
-    console.log(control);
-    console.log(notificationBarElement);
-
-    function toggleMessage() {
-        notificationBarElement.classList.toggle('notification-bar_active');
-    }
-    control.addEventListener('click', toggleMessage);
-}
-
-notificationBar();
-
-function notificationBarYellow() {
-    var notificationBarYellowElement = document.querySelector('.notification-bar-yellow');
-    var control = document.querySelector('.notification-bar-yellow__btn');
-
-    console.log(control);
-    console.log(notificationBarYellowElement);
-
-    function toggleMessage() {
-        notificationBarYellowElement.classList.toggle('notification-bar-yellow_active');
-    }
-    control.addEventListener('click', toggleMessage);
-}
-
-notificationBarYellow();
-
-function notificationBarGreen() {
-    var notificationBarGreenElement = document.querySelector('.notification-bar-green');
-    var control = document.querySelector('.notification-bar-green__btn');
-
-    console.log(control);
-    console.log(notificationBarGreenElement);
-
-    function toggleMessage() {
-        notificationBarGreenElement.classList.toggle('notification-bar-green_active');
-    }
-    control.addEventListener('click', toggleMessage);
-}
-
-notificationBarGreen();
+_ajax.Ajax.get('http://localhost:4001/comments'), function (response) {
+    console.log(response);
+}, function (e) {
+    console.log(e);
+};
 
 /***/ }),
-/* 341 */
-/***/ (function(module, exports) {
+/* 390 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Comments = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _ajax = __webpack_require__(329);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Comments = exports.Comments = function () {
+  function Comments(target) {
+    var _this = this;
+
+    _classCallCheck(this, Comments);
+
+    this.target = target;
+    this.render();
+    _ajax.Ajax.get(function (comments) {
+      _this.renderList(comments);
+    }, function (xhr) {
+      console.error(xhr.status);
+    });
+  }
+
+  _createClass(Comments, [{
+    key: 'render',
+    value: function render() {
+      this.ul = document.createElement('ul');
+      this.target.appendChild(this.ul);
+      this.span = document.createElement('span');
+      this.target.appendChild(this.span);
+    }
+  }, {
+    key: 'renderList',
+    value: function renderList(comments) {
+      var _this2 = this;
+
+      comments.forEach(function (item) {
+        var li = document.createElement('li');
+        li.textContent = item.title;
+
+        var span = document.createElement('span');
+        span.textContent = item.author;
+
+        _this2.ul.appendChild(li);
+        _this2.span.appendChild(span);
+      });
+    }
+  }]);
+
+  return Comments;
+}();
 
 /***/ })
 /******/ ]);

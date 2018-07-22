@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 374);
+/******/ 	return __webpack_require__(__webpack_require__.s = 375);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9048,7 +9048,7 @@ exports.Accordion = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(377);
+__webpack_require__(378);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9154,34 +9154,29 @@ var Accordion = exports.Accordion = function () {
 /* 371 */,
 /* 372 */,
 /* 373 */,
-/* 374 */
+/* 374 */,
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(375);
+module.exports = __webpack_require__(376);
 
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(376);
+__webpack_require__(377);
 
 var _accordion = __webpack_require__(328);
 
-var _addAccordion = __webpack_require__(378);
+var _addAccordion = __webpack_require__(379);
 
 var accordion = new _accordion.Accordion(document.querySelector('#accordion1'));
 var addaccordion = new _addAccordion.AddAccordion(document.querySelector('#add-accordion1'));
-
-/***/ }),
-/* 376 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 377 */
@@ -9191,6 +9186,12 @@ var addaccordion = new _addAccordion.AddAccordion(document.querySelector('#add-a
 
 /***/ }),
 /* 378 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9205,7 +9206,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _accordion = __webpack_require__(328);
 
-__webpack_require__(379);
+__webpack_require__(380);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9256,7 +9257,7 @@ var AddAccordion = exports.AddAccordion = function () {
 }();
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
