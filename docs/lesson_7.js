@@ -9088,7 +9088,7 @@ __webpack_require__(363);
 /* 363 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\nundefined\r\n^\r\n      File to import not found or unreadable: ./styles/lesson_7_scss.\r\n      in D:\\katelevchenko.github.io\\src\\lesson_7\\lesson_7.scss (line 5, column 1)\n    at runLoaders (D:\\katelevchenko.github.io\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at D:\\katelevchenko.github.io\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at D:\\katelevchenko.github.io\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (D:\\katelevchenko.github.io\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (D:\\katelevchenko.github.io\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (D:\\katelevchenko.github.io\\node_modules\\neo-async\\async.js:7974:18)\n    at options.error (D:\\katelevchenko.github.io\\node_modules\\node-sass\\lib\\index.js:294:32)");
 
 /***/ })
 /******/ ]);
