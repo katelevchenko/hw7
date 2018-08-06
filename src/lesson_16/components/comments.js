@@ -1,44 +1,47 @@
 import {
-    Ajax
-  } from "../utils/ajax";
-  
-  export class Comments {
-    constructor(target) {
-      this.target = target;
-      this.render();
-      Ajax.get(
-        (comments) => {
-          this.renderList(comments);
-        },
-        (xhr) => {
-          console.error(xhr.status);
-        });
-    }
-  
-    render() {
-      this.ul = document.createElement('ul');
-      this.target.appendChild(this.ul);
-      this.span = document.createElement('span');
-      this.target.appendChild(this.span);
-    }
-  
-    renderList(comments) {
-      comments.forEach((item) => {
-        
-        const li = document.createElement('li');
-        li.textContent = item.title;
+  Ajax
+} from "../utils/ajax";
 
-        const span = document.createElement('span');
-        span.textContent = item.title;
+export class TaskList {
+  constructor(target) {
+    this.target = target;
+    this.render();
+    Ajax.get(
+      'http://localhost:4001/list',
+      (list) => {
+        this.renderList(list);
+      },
+      (xhr) => {
+        console.error(xhr.status);
+      }
+    );
 
-        const authorEl = document.createElement('span');
-        authorEl.textContent = item.author;
-
-        const textEl = document.createElement('span');
-        textEl.textContent = item.text;
-      
-        this.ul.appendChild(li);
-        this.span.appendChild(span);
-      })
-    }
+    Ajax.post(
+      'http://localhost:4001/list', 
+      {
+        title: 'HELLO WORLD'
+      },
+      (resp) => {
+        console.log(resp);
+      },
+      (e) => {
+        console.error(e);
+      }
+    )
   }
+
+  render() {
+    this.ul = document.createElement('ul');
+    this.target.appendChild(this.ul);
+  }
+
+  renderList(list) {
+    list.forEach((item) => {
+      const li = document.createElement('li');
+
+      li.textContent = item.title;
+
+      this.ul.appendChild(li);
+    })
+  }
+}

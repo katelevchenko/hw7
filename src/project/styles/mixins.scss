@@ -1,0 +1,31 @@
+@mixin LogoPositionDimension {
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 150px;
+  }
+@mixin ImgPositionDimention {
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+@mixin IconPositionDimention {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin: 18px;
+}
+@mixin MenuLinkDecoration {
+    list-style-type: none;
+    text-decoration: none;
+    color: #33333a;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+@mixin ContainerPositionDimention {
+    width: 1100px;
+    margin: 0 auto;
+}

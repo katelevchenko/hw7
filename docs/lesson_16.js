@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 388);
+/******/ 	return __webpack_require__(__webpack_require__.s = 412);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9036,7 +9036,32 @@ module.exports = function (regExp, replace) {
 /***/ }),
 /* 327 */,
 /* 328 */,
-/* 329 */
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9080,31 +9105,6 @@ var Ajax = exports.Ajax = function () {
 }();
 
 /***/ }),
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
 /* 355 */,
 /* 356 */,
 /* 357 */,
@@ -9138,23 +9138,47 @@ var Ajax = exports.Ajax = function () {
 /* 385 */,
 /* 386 */,
 /* 387 */,
-/* 388 */
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(389);
+module.exports = __webpack_require__(413);
 
 
 /***/ }),
-/* 389 */
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _comments = __webpack_require__(390);
+var _comments = __webpack_require__(414);
 
-var _ajax = __webpack_require__(329);
+var _ajax = __webpack_require__(354);
 
 var list = new _comments.Comments(document.querySelector('.comments'));
 
@@ -9165,7 +9189,7 @@ _ajax.Ajax.get('http://localhost:4001/comments'), function (response) {
 };
 
 /***/ }),
-/* 390 */
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9174,62 +9198,59 @@ _ajax.Ajax.get('http://localhost:4001/comments'), function (response) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Comments = undefined;
+exports.TaskList = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _ajax = __webpack_require__(329);
+var _ajax = __webpack_require__(354);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Comments = exports.Comments = function () {
-  function Comments(target) {
+var TaskList = exports.TaskList = function () {
+  function TaskList(target) {
     var _this = this;
 
-    _classCallCheck(this, Comments);
+    _classCallCheck(this, TaskList);
 
     this.target = target;
     this.render();
-    _ajax.Ajax.get(function (comments) {
-      _this.renderList(comments);
+    _ajax.Ajax.get('http://localhost:4001/list', function (list) {
+      _this.renderList(list);
     }, function (xhr) {
       console.error(xhr.status);
     });
+
+    _ajax.Ajax.post('http://localhost:4001/list', {
+      title: 'HELLO WORLD'
+    }, function (resp) {
+      console.log(resp);
+    }, function (e) {
+      console.error(e);
+    });
   }
 
-  _createClass(Comments, [{
+  _createClass(TaskList, [{
     key: 'render',
     value: function render() {
       this.ul = document.createElement('ul');
       this.target.appendChild(this.ul);
-      this.span = document.createElement('span');
-      this.target.appendChild(this.span);
     }
   }, {
     key: 'renderList',
-    value: function renderList(comments) {
+    value: function renderList(list) {
       var _this2 = this;
 
-      comments.forEach(function (item) {
+      list.forEach(function (item) {
         var li = document.createElement('li');
+
         li.textContent = item.title;
 
-        var span = document.createElement('span');
-        span.textContent = item.title;
-
-        var authorEl = document.createElement('span');
-        authorEl.textContent = item.author;
-
-        var textEl = document.createElement('span');
-        textEl.textContent = item.text;
-
         _this2.ul.appendChild(li);
-        _this2.span.appendChild(span);
       });
     }
   }]);
 
-  return Comments;
+  return TaskList;
 }();
 
 /***/ })

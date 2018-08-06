@@ -1,0 +1,95 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.header-menu__nav {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    max-width: 700px;
+    height: 80px;
+    margin-left: 100px;
+}
+
+.header-menu__nav_logo {
+    background-image: url(../../assets/images/matter.png);
+    @include LogoPositionDimension;
+    margin-top: 20px;
+}
+.header-menu__nav-items {
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+    align-content: space-between;
+    max-width: 700px;
+}
+.header-menu__nav-items_item {
+    @include MenuLinkDecoration;
+    padding: 12px; 
+    margin-top: 6px;
+}
+.header-menu__nav-items_arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px #33333a;
+}
+.header-menu__account-panel {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    border: 0;
+    align-content: space-between;
+    width: 450px;
+    justify-content:  flex-start;
+
+    &_registration {
+        @include MenuLinkDecoration;
+       margin-top: 23px;
+    }
+    &_photo {
+        background-image: url(../../assets/images/image_alex.png);
+        @include ImgPositionDimention;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    &_search-icon {
+        background-image: url(../../assets/images/search_icon.png);
+        @include IconPositionDimention;
+    }
+    &_like-icon {
+        background-image: url(../../assets/images/like_icon.png);
+        @include IconPositionDimention;
+    }
+    &_basket-icon {
+        background-image: url(../../assets/images/basket_icon.png);
+        @include IconPositionDimention;
+        margin-top: 10px;
+    }
+}
+.breadcrumbs {
+    background: #ffffff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+    height: 80px;
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        &_item {
+            margin: 0;
+            @include MenuLinkDecoration;
+        }
+        &_link {
+            @include MenuLinkDecoration;
+        }
+    }
+}
