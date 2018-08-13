@@ -1,0 +1,130 @@
+@import "./variables";
+@import "./fonts";
+
+@mixin LogoPositionDimension {
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 120px;
+  }
+@mixin ImgPositionDimention {
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+@mixin MenuLinkDecoration {
+    list-style-type: none;
+    text-decoration: none;
+    color: $base-font-color;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 300;
+    font-size: $base-font-size;
+    letter-spacing: 2px;
+}
+@mixin MenuLinkBreadcrumbsDecoration {
+    list-style-type: none;
+    text-decoration: none;
+    color: #030303;
+    font-family: "Proxima Nova Regular";
+    font-weight: 200;
+    font-size: 20px;
+}
+@mixin TextConfiguration {
+    font-family: "Proxima Nova Semibold";
+    color: $base-font-color;
+    font-size: 18px;
+    line-height: 25px;
+}
+@mixin TextConfigurationGray {
+    font-family: "Proxima Nova Regular";
+    color: #666666;
+    font-size: 18px;
+    line-height: 25px;
+}
+@mixin ContainerPositionDimention {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    align-items: center;
+    max-width: $max-display-width;
+    margin: 0 auto;
+}
+@mixin ImgSmallPositionDimention {
+    width: 69px;
+    height: 69px;
+    margin-top: 20px;
+}
+@mixin BorderStyle {
+    border: solid 1px #dedede;
+}
+@mixin TextWidthAndDecoration {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    max-width: 750px;
+    font-family: "Proxima Nova Regular";
+    font-weight: 200;
+    color: $base-font-color;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 auto;
+    text-align: justify;
+}
+@mixin TextWidthAndDecorationGray {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    max-width: 750px;
+    font-family: "Proxima Nova Regular";
+    font-weight: 200;
+    color:#666666;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 auto;
+    text-align: justify;
+}
+@mixin TitleDecoration {
+    font-family: "WorkSans Medium";
+    font-weight: 500;
+    color: $base-font-color;
+    font-size: 38px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+@mixin AlternativeProductPhoto1024px {
+    width: 235px;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+@mixin AlternativeProductPhoto {
+    width: 288px;
+    height: 540px;
+    background-repeat: no-repeat;
+}
+@mixin AlternativeProductPhotoCaption {
+    font-family: "Proxima Nova Regular";
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 25px;
+    color: $base-font-color;
+}
+@mixin FooterTextDecoration {
+    font-family: "Proxima Nova Light";
+    font-weight: 100;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    color:#dedede;
+}
+@mixin FooterContainerPositionDimention {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: $max-display-width;
+    margin: 0 auto;  
+}
+    
+

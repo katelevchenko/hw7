@@ -1,0 +1,74 @@
+@import "./variables.scss";
+.product__description-product_btn {
+  border: none;
+  background-color: $base-font-color;
+  color: #ffffff;
+  letter-spacing: $stnd-letter-spacing *3;
+  font-family: "Proxima Nova Light";
+  font-weight: 100;
+  font-size: 12px;
+  width: 180px;
+  height: 40px;
+}
+.product__description-product_btn-wshlst {
+  border: none;
+  background-color: transparent;
+  color: $base-font-color;
+  letter-spacing: $stnd-letter-spacing *3;
+  font-family: "Proxima Nova Light";
+  font-weight: 100;
+  font-size: 12px;
+  width: 180px;
+  height: 40px;
+}
+.product__description-product_btn-wshlst-underline {
+  width: 180px;
+  height: 2px;
+  color: $base-font-color;
+}
+.review__write-review_btn {
+  border: none;
+  background-color: $base-font-color;
+  color: #ffffff;
+  letter-spacing: $stnd-letter-spacing *3;
+  font-family: "Proxima Nova Light";
+  font-weight: 100;
+  font-size: 12px;
+  width: 180px;
+  height: 40px;
+}
+.review__customer-review_btn {
+  border: none;
+  background-color: transparent;
+  color: $base-active_color;
+  letter-spacing: $stnd-letter-spacing *3;
+  font-family: "Proxima Nova Regular";
+  font-weight: 200;
+  font-size: 12px;
+  width: 176px;
+  height: 40px;
+  padding: 0;
+}
+.footer__subscribe_btn {
+  border: none;
+  background-color: #ffffff;
+  color: $base-font-color;
+  letter-spacing: $stnd-letter-spacing *3;
+  font-family: "Proxima Nova Regular";
+  font-weight: 200;
+  font-size: 12px;
+  width: 176px;
+  height: 40px;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .footer__subscribe_btn {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .footer__subscribe_btn {
+    width: 160px;
+    margin: 0;
+  }
+}
