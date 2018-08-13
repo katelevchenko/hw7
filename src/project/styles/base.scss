@@ -10,6 +10,7 @@ html {
 }
 body {
     margin: 0;
+    overflow-x:hidden;
 }
 .header__international-shipping {
     font-family: "Proxima Nova Light";
@@ -28,12 +29,24 @@ body {
     height: 40px;
     background-color: #1d1d1d;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     .header__rectangle {
-        height: 160px;
+        height: 60px;
     }
     .header__international-shipping {
         padding: 10px;
 
+    }
+}
+@media screen and (max-width: 414px) {
+    .header__rectangle {
+        height: 60px;
+    }
+    .header__international-shipping {
+        max-width: 320px;
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        line-height: 18px;
     }
 }
