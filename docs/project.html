@@ -15,40 +15,33 @@
     <header class="header-menu">
         <div class="header-menu__nav">
             <span class="header-menu__nav_logo"></span>
-            <span class="header-menu__nav_hamburger_menu">
+            <span id="hm">
                 <?xml version="1.0" encoding="UTF-8"?>
-<svg enable-background="new 0 0 35 24" version="1.1" viewBox="0 0 35 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-</style>
-<path class="st0" d="M34.6,4H0.4C0.2,4,0,3.8,0,3.6V0.4C0,0.2,0.2,0,0.4,0h34.2C34.8,0,35,0.2,35,0.4v3.2C35,3.8,34.8,4,34.6,4z"/>
-	<path d="M34.6,14H0.4C0.2,14,0,13.8,0,13.6v-3.2C0,10.2,0.2,10,0.4,10h34.2c0.2,0,0.4,0.2,0.4,0.4v3.2C35,13.8,34.8,14,34.6,14z"/>
-	<path d="M34.6,24H0.4C0.2,24,0,23.8,0,23.6v-3.2C0,20.2,0.2,20,0.4,20h34.2c0.2,0,0.4,0.2,0.4,0.4v3.2C35,23.8,34.8,24,34.6,24z"/>
-	<path d="M34.6,4H0.4C0.2,4,0,3.8,0,3.6V0.4C0,0.2,0.2,0,0.4,0h34.2C34.8,0,35,0.2,35,0.4v3.2C35,3.8,34.8,4,34.6,4z"/>
-	<path d="M34.6,14H0.4C0.2,14,0,13.8,0,13.6v-3.2C0,10.2,0.2,10,0.4,10h34.2c0.2,0,0.4,0.2,0.4,0.4v3.2C35,13.8,34.8,14,34.6,14z"/>
-</svg>
-
-
+                <svg enable-background="new 0 0 35 24" version="1.1" viewBox="0 0 35 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <path class="st0" d="M34.6,4H0.4C0.2,4,0,3.8,0,3.6V0.4C0,0.2,0.2,0,0.4,0h34.2C34.8,0,35,0.2,35,0.4v3.2C35,3.8,34.8,4,34.6,4z"
+                    />
+                    <path d="M34.6,14H0.4C0.2,14,0,13.8,0,13.6v-3.2C0,10.2,0.2,10,0.4,10h34.2c0.2,0,0.4,0.2,0.4,0.4v3.2C35,13.8,34.8,14,34.6,14z"
+                    />
+                    <path d="M34.6,24H0.4C0.2,24,0,23.8,0,23.6v-3.2C0,20.2,0.2,20,0.4,20h34.2c0.2,0,0.4,0.2,0.4,0.4v3.2C35,23.8,34.8,24,34.6,24z"
+                    />
+                    <path d="M34.6,4H0.4C0.2,4,0,3.8,0,3.6V0.4C0,0.2,0.2,0,0.4,0h34.2C34.8,0,35,0.2,35,0.4v3.2C35,3.8,34.8,4,34.6,4z" />
+                    <path d="M34.6,14H0.4C0.2,14,0,13.8,0,13.6v-3.2C0,10.2,0.2,10,0.4,10h34.2c0.2,0,0.4,0.2,0.4,0.4v3.2C35,13.8,34.8,14,34.6,14z"
+                    />
+                </svg>
             </span>
-            <ul class="header-menu__nav-items">
-                <li class="header-menu__nav-items_item-active">
-                    <a class="header-menu__nav-items_item-active" href="">SHOP
-                        <i class="header-menu__nav-items_arrow-active"></i>
-                    </a>
-                </li>
-                <li class="header-menu__nav-items_item">
-                    <a class="header-menu__nav-items_item" href="">FABRIC</a>
-                    <span class="header-menu__nav-items_arrow"></span>
-                </li>
-                <li class="header-menu__nav-items_item">
-                    <a class="header-menu__nav-items_item" href="">JOURNAL</a>
-                    <span class="header-menu__nav-items_arrow"></span>
-                </li>
-                <li class="header-menu__nav-items_item">
-                    <a class="header-menu__nav-items_item" href="">ABOUT</a>
-                    <span class="header-menu__nav-items_arrow"></span>
-                </li>
-            </ul>
+            <div class="header-menu__nav-items">
+                
+                <div id="menu"></div>
+                <div id="shop"></div>
+                <div id="fabric"></div>
+                <div id="journal"></div>
+                <div id="about"></div>
+            </div>
         </div>
         <div class="header-menu__account-panel">
             <h2 class="header-menu__account-panel_registration">WELCOME, ALEX</h2>
@@ -119,16 +112,17 @@
         </ul>
     </header>
     <div class="product">
-        <div class="product__photo-list">
+        <div id='phg'></div>       
+        <!-- <div class="product__photo-list">
             <span class="product__photo-list_blue-small"></span>
-            <span class="product__photo-list_black_small"></span>
+            <span class="product__photo-list_black-small"></span>
             <span class="product__photo-list_shorts-small"></span>
             <span class="product__photo-list_dress-small"></span>
             <span class="product__photo-list_pink-small"></span>
         </div>
         <div class="product__description-product_photo">
             <span class="product__description-product_photo_large-photo"></span>
-        </div>
+        </div> -->
         <div class="product__description-product">
             <h1 class="product__description-product_name">The Sideswept Dhoti + Bottom Line Grey (Silk)</h1>
             <div class="product__description-product_price">
@@ -176,12 +170,12 @@
                 <span class="product__description-product_refinement-qt">QUANTITY</span>
             </div>
             <div class="product__description-product_quantity">
-                <span class="product__description-product_counter"></span>
+                <div id="counter"></div>
                 <button class="product__description-product_btn">ADD TO CART</button>
                 <button class="product__description-product_btn-wshlst">ADD TO WISHLIST</button>
             </div>
-            <div class="product__description-product_accordion1">Features</div>
-            <div class="product__description-product_accordion2">Fabric Care</div>
+            <div id="FC"></div>
+            <div id="FC2"></div>
         </div>
     </div>
     <div class="phototext__photo_contain">

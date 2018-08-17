@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 387);
+/******/ 	return __webpack_require__(__webpack_require__.s = 388);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9094,21 +9094,22 @@ module.exports = function (regExp, replace) {
 /* 384 */,
 /* 385 */,
 /* 386 */,
-/* 387 */
+/* 387 */,
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(388);
+module.exports = __webpack_require__(389);
 
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(389);
+__webpack_require__(390);
 
 // const MANAGER_BUTTON_CLASS_NAME = 'manager__btn';
 // const MANAGER_BUTTON_ACTIVE_CLASS_NAME = 'manager__btn_active';
@@ -9139,7 +9140,7 @@ var arr = ['a', 'm', 'Саша', 'Катя'];
 alert(arr.indexOf(2));
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

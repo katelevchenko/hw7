@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 382);
+/******/ 	return __webpack_require__(__webpack_require__.s = 383);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9089,21 +9089,22 @@ module.exports = function (regExp, replace) {
 /* 379 */,
 /* 380 */,
 /* 381 */,
-/* 382 */
+/* 382 */,
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(383);
+module.exports = __webpack_require__(384);
 
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(384);
+__webpack_require__(385);
 
 // Задание 1
 
@@ -9280,7 +9281,7 @@ function calcTotal(arrayOfNumbers) {
 }
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

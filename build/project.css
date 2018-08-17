@@ -122,7 +122,8 @@ body {
       flex-flow: wrap;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  max-width: 600px; }
+  margin-left: 10px;
+  max-width: 500px; }
 
 .header-menu__account-panel {
   display: -ms-flexbox;
@@ -195,7 +196,8 @@ body {
       color: #030303;
       font-family: "Proxima Nova Regular";
       font-weight: 200;
-      font-size: 20px; }
+      font-size: 20px;
+      z-index: 2; }
     .breadcrumbs__menu_link {
       list-style-type: none;
       text-decoration: none;
@@ -216,15 +218,11 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .header-menu__nav {
+    max-width: 600px;
     margin-left: 20px; }
-  .header-menu__nav {
-    max-width: 600px; }
   .header-menu__nav-items {
     max-width: 400px;
     padding-left: 20px; }
-  .header-menu__nav-items_item, .header-menu__nav-items_item-active {
-    padding: 8px;
-    font-size: 12px; }
   .header-menu__account-panel_registration {
     font-size: 12px;
     margin-top: 14px; }
@@ -476,6 +474,14 @@ body {
     width: 50px;
     height: 40px;
     border: solid 1px #dedede;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 14px; }
+  .product__description-product_sizes_size:hover {
+    width: 50px;
+    height: 40px;
+    border: solid 1px #dedede;
+    background-color: #f3f3f3;
     padding-left: 20px;
     padding-top: 10px;
     font-size: 14px; }
@@ -1466,9 +1472,6 @@ body {
   src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
   font-weight: 200; }
 
-#ul {
-  list-style-type: none; }
-
 .headershop {
   display: -ms-flexbox;
   display: flex;
@@ -1479,11 +1482,13 @@ body {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   height: 40px;
-  max-width: 600px; }
-  .headershop__link {
+  padding: 0;
+  padding-left: 10px;
+  max-width: 500px; }
+  .headershop__link, .headershop__linka {
     list-style-type: none;
     margin-top: 13px; }
-  .headershop__link_item {
+  .headershop__link_item, .headershop__linka_itema {
     list-style-type: none;
     text-decoration: none;
     color: #33333a;
@@ -1492,7 +1497,7 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     padding: 12px; }
-  .headershop__link_arrow {
+  .headershop__link_arrow, .headershop__linka_arrowa {
     border: solid  #33333a;
     border-width: 0 1px 1px 0;
     display: inline-block;
@@ -1502,13 +1507,13 @@ body {
     -webkit-transform: rotate(45deg);
     margin-left: -10px;
     margin-bottom: 4px; }
-  .headershop__link_panel {
+  .headershop__link_panel, .headershop__linka_panela {
     height: 500px;
     background: white;
     display: none; }
-  .headershop_active .headershop__link_item {
+  .headershop_active .headershop__link_item, .headershop_active .headershop__linka_itema {
     color: #ff6008; }
-  .headershop_active .headershop__link_arrow {
+  .headershop_active .headershop__link_arrow, .headershop_active .headershop__linka_arrowa {
     border: solid #ff6008;
     border-width: 0 1px 1px 0;
     display: inline-block;
@@ -1517,8 +1522,8 @@ body {
         transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     margin-bottom: 2px; }
-  .headershop_active .headershop__link_panel {
-    max-width: 600px;
+  .headershop_active .headershop__link_panel, .headershop_active .headershop__linka_panela {
+    width: 70px;
     height: 100px;
     background-color: #ffffff;
     z-index: 1;
@@ -1526,6 +1531,15 @@ body {
     padding: 10px;
     display: -ms-flexbox;
     display: flex; }
+
+@media only screen and (max-width: 1024px) {
+  .headershop {
+    padding: 0; }
+    .headershop__link_item {
+      font-size: 12px;
+      padding: 12px; }
+  .header-menu__nav-items {
+    margin: 0; } }
 @font-face {
   font-family: "Proxima Nova Regular";
   src: url(assets/fonts/proximanova-regular-webfont.woff2) format("woff2");
@@ -1585,7 +1599,7 @@ body {
   width: 500px;
   height: 2px;
   background-color: #f9f8f6;
-  margin-top: -145px; }
+  margin-top: -187px; }
 
 .product_active .product__plus {
   margin-top: -222px;
@@ -1611,9 +1625,87 @@ body {
 @media only screen and (max-width: 414px) {
   .product__line, .product__plus {
     display: none; } }
+.photos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+  .photos__photo1 {
+    background-image: url(assets/images/blue_small.png);
+    width: 69px;
+    height: 69px;
+    margin-top: 20px; }
+  .photos__photo2 {
+    background-image: url(assets/images/black_small.png);
+    width: 69px;
+    height: 69px;
+    margin-top: 20px; }
+  .photos__photo3 {
+    background-image: url(assets/images/shorts_small.png);
+    width: 69px;
+    height: 69px;
+    margin-top: 20px; }
+  .photos__photo4 {
+    background-image: url(assets/images/dress_small.png);
+    width: 69px;
+    height: 69px;
+    margin-top: 20px; }
+  .photos__photo5 {
+    background-image: url(assets/images/pink_small.png);
+    width: 69px;
+    height: 69px;
+    margin-top: 20px; }
+
+.photos__photo1_bigphoto1 {
+  background-image: url(assets/images/blue_big.png);
+  width: 455px;
+  height: 684px; }
+
+.photos__photo2_bigphoto2 {
+  background-image: url(assets/images/black_big.png);
+  width: 455px;
+  height: 684px; }
+
+.photos__photo3_bigphoto3 {
+  background-image: url(assets/images/shorts_big.png);
+  width: 455px;
+  height: 684px; }
+
+.photos__photo4_bigphoto4 {
+  background-image: url(assets/images/dress_big.png);
+  width: 455px;
+  height: 684px; }
+
+.photos__photo5_bigphoto5 {
+  background-image: url(assets/images/pink_big.png);
+  width: 455px;
+  height: 684px; }
 @media screen and (max-width: 414px) {
   #hm {
     width: 28px;
     height: 20px;
     margin-top: 12px;
     margin-left: 70px; } }
+.counter {
+  width: 120px;
+  height: 40px;
+  border: solid 1px #dedede; }
+  .counter__down {
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+    background-image: url(assets/images/minus.png); }
+  .counter__up {
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+    background-image: url(assets/images/plus.png); }
+  .counter__number {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #686868; }

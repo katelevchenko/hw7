@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 412);
+/******/ 	return __webpack_require__(__webpack_require__.s = 413);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9061,7 +9061,8 @@ module.exports = function (regExp, replace) {
 /* 351 */,
 /* 352 */,
 /* 353 */,
-/* 354 */
+/* 354 */,
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9105,7 +9106,6 @@ var Ajax = exports.Ajax = function () {
 }();
 
 /***/ }),
-/* 355 */,
 /* 356 */,
 /* 357 */,
 /* 358 */,
@@ -9162,23 +9162,24 @@ var Ajax = exports.Ajax = function () {
 /* 409 */,
 /* 410 */,
 /* 411 */,
-/* 412 */
+/* 412 */,
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(413);
+module.exports = __webpack_require__(414);
 
 
 /***/ }),
-/* 413 */
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _comments = __webpack_require__(414);
+var _comments = __webpack_require__(415);
 
-var _ajax = __webpack_require__(354);
+var _ajax = __webpack_require__(355);
 
 var list = new _comments.Comments(document.querySelector('.comments'));
 
@@ -9189,7 +9190,7 @@ _ajax.Ajax.get('http://localhost:4001/comments'), function (response) {
 };
 
 /***/ }),
-/* 414 */
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9202,7 +9203,7 @@ exports.TaskList = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _ajax = __webpack_require__(354);
+var _ajax = __webpack_require__(355);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
