@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("../../../../assets/fonts/proximanova-regular-webfont.woff2") format("woff2");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url("../../../../assets/fonts/Proxima-Nova-Semibold.woff2") format("woff2");
+    font-weight: 200;
+}
+.headershop {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    align-content: space-between;
+    height: 40px;
+    padding: 0;
+    padding-left: 10px;
+    max-width: 500px;
+    &__link, &__linka {
+        list-style-type: none;
+        margin-top: 13px;
+    }
+    &__link_item, &__linka_itema {
+        list-style-type: none;
+        text-decoration: none;
+        color: #33333a;
+        font-family: "Proxima Nova Semibold";
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 12px;
+    }
+    &__link_arrow, &__linka_arrowa {
+        border: solid  #33333a;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-left: -10px;
+        margin-bottom: 4px;
+    }
+    &__link_panel, &__linka_panela {
+        height: 500px;
+        background: white;
+        display: none;
+    }
+    &_active {
+        .headershop__link_item, .headershop__linka_itema, {
+            color: #ff6008;
+        }
+        .headershop__link_arrow,  .headershop__linka_arrowa {
+            border: solid #ff6008;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 2px;
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            margin-bottom: 2px;
+        }
+        .headershop__link_panel, .headershop__linka_panela {
+            width: 70px;
+            height: 100px;
+            background-color: #ffffff;
+            z-index: 1;
+            color: #33333a;
+            padding: 10px;
+            display: flex;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .headershop {
+        padding: 0;
+        &__link_item {
+            font-size: 12px;
+            padding: 12px;
+        }
+    }
+    .header-menu__nav-items {
+        margin: 0;
+    }
+}

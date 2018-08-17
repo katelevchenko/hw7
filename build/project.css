@@ -110,6 +110,9 @@ body {
   width: 120px;
   margin-top: 20px; }
 
+#hm {
+  display: none; }
+
 .header-menu__nav-items {
   display: -ms-flexbox;
   display: flex;
@@ -120,49 +123,6 @@ body {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   max-width: 600px; }
-
-.header-menu__nav-items_item-active {
-  list-style-type: none;
-  text-decoration: none;
-  color: #ff6008;
-  font-family: "Proxima Nova Semibold";
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding: 12px;
-  margin-top: 6px; }
-
-.header-menu__nav-items_item {
-  list-style-type: none;
-  text-decoration: none;
-  color: #33333a;
-  font-family: "Proxima Nova Semibold";
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding: 12px;
-  margin-top: 6px; }
-
-.header-menu__nav-items_arrow-active {
-  border: solid #ff6008;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 2px;
-  -ms-transform: rotate(-135deg);
-      transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  margin-bottom: 2px; }
-
-.header-menu__nav-items_arrow {
-  border: solid  #33333a;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 2px;
-  -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin-left: -10px;
-  margin-bottom: 4px; }
 
 .header-menu__account-panel {
   display: -ms-flexbox;
@@ -254,7 +214,7 @@ body {
       margin-left: -20px;
       margin-right: 18px; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .header-menu__nav {
     margin-left: 20px; }
   .header-menu__nav {
@@ -311,11 +271,6 @@ body {
   .header-menu__nav {
     width: 360px;
     margin: 0; }
-  .header-menu__nav_hamburger_menu {
-    width: 28px;
-    height: 20px;
-    margin-top: 12px;
-    margin-left: 90px; }
   .header-menu__nav-items_item-active, .header-menu__nav-items_item {
     display: none; }
   .header-menu__nav_logo {
@@ -328,6 +283,22 @@ body {
     height: 60px; }
     .breadcrumbs__menu {
       height: 60px; } }
+
+@media screen and (max-width: 360px) {
+  .header-menu {
+    max-width: 320px; }
+  .header-menu__nav {
+    width: 320px; }
+  .header-menu__nav_logo {
+    margin-left: 100px; }
+  .header-menu__nav_hamburger_menu {
+    margin-left: 50px; }
+  .breadcrumbs__menu_item {
+    font-size: 8px;
+    margin-right: 24px; }
+  .breadcrumbs__menu_arrow {
+    padding: 1px;
+    margin-right: 6px; } }
 
 @media screen and (max-width: 320px) {
   .header-menu {
@@ -560,7 +531,7 @@ body {
   height: 40px;
   border: solid 1px #dedede; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .product__description-product_photo_large-photo {
     background-image: url(assets/images/blue_big_0.8.png);
     width: 366px;
@@ -620,9 +591,18 @@ body {
     -ms-flex-order: 3;
         order: 3; } }
 
+@media screen and (max-width: 375px) {
+  .product {
+    max-width: 360px; }
+  .product__description-product {
+    max-width: 320px;
+    margin: 0 auto; } }
+
 @media screen and (max-width: 320px) {
   .product {
     max-width: 320px; }
+    .product__description-product_photo {
+      margin: 0 auto; }
   .product__photo-list {
     display: none; }
   .product__description-product {
@@ -754,7 +734,7 @@ body {
     text-align: justify;
     padding-top: 60px; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .photo-gallery__photos {
     max-width: 1000px; }
     .photo-gallery__photos_photo-girl-glass {
@@ -804,6 +784,8 @@ body {
     width: 414px;
     height: 356px;
     background-image: url(assets/images/two_pants_mobile.png); }
+  .phototext__photo_contain {
+    margin-top: -70px; }
   .phototext__text_gray, .phototext__text_black {
     max-width: 320px;
     font-size: 16px;
@@ -899,7 +881,7 @@ body {
     height: 288px;
     background-repeat: no-repeat; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .instagram {
     border: 0; }
   .instagram__photos {
@@ -1157,7 +1139,7 @@ body {
     color: #33333a;
     margin-top: 440px; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .product-alternatives_title {
     width: 1000px; }
   .product-alternatives__photos {
@@ -1246,7 +1228,7 @@ body {
   .review__write-review_stars {
     display: none; }
   .review__top_rws {
-    margin-top: -40px; }
+    margin-top: -45px; }
   .product-alternatives_title {
     max-width: 360px; }
   .product-alternatives_title-ttl {
@@ -1257,6 +1239,12 @@ body {
   .review__customer-review_comment {
     font-size: 16px;
     line-height: 28px; } }
+
+@media screen and (max-width: 360px) {
+  .review__top_rws {
+    margin-top: -45px; }
+  .product-alternatives__photos {
+    max-width: 320px; } }
 
 @media screen and (max-width: 320px) {
   .review {
@@ -1433,7 +1421,7 @@ body {
   height: 24px;
   background-repeat: no-repeat; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .footer {
     margin-top: 160px; }
   .footer__elements {
@@ -1462,9 +1450,170 @@ body {
   .footer__subscribe_email {
     padding-right: 20px; } }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   .footer__elements {
     max-width: 300px;
     margin-top: 40px; }
   .footer__categories_items, .footer__partners_items, .footer_contacts_items {
     width: 150px; } }
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url(assets/fonts/proximanova-regular-webfont.woff2) format("woff2");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
+  font-weight: 200; }
+
+#ul {
+  list-style-type: none; }
+
+.headershop {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 40px;
+  max-width: 600px; }
+  .headershop__link {
+    list-style-type: none;
+    margin-top: 13px; }
+  .headershop__link_item {
+    list-style-type: none;
+    text-decoration: none;
+    color: #33333a;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 12px; }
+  .headershop__link_arrow {
+    border: solid  #33333a;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: -10px;
+    margin-bottom: 4px; }
+  .headershop__link_panel {
+    height: 500px;
+    background: white;
+    display: none; }
+  .headershop_active .headershop__link_item {
+    color: #ff6008; }
+  .headershop_active .headershop__link_arrow {
+    border: solid #ff6008;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+    -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-bottom: 2px; }
+  .headershop_active .headershop__link_panel {
+    max-width: 600px;
+    height: 100px;
+    background-color: #ffffff;
+    z-index: 1;
+    color: #33333a;
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex; }
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url(assets/fonts/proximanova-regular-webfont.woff2) format("woff2");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
+  font-weight: 200; }
+
+.product__accordion {
+  width: 500px;
+  height: 40px;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Proxima Nova Semibold;
+  font-size: 18px; }
+
+.product__line {
+  width: 500px;
+  height: 2px;
+  background-color: #f9f8f6;
+  margin-top: -66px; }
+
+.product__plus {
+  position: relative;
+  margin-top: -140px;
+  margin-left: 380px;
+  left: 100px;
+  top: 100px;
+  border: 1px dotted white;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  box-sizing: border-box;
+  -ms-transform: scale(3);
+      transform: scale(3); }
+
+.product__panel {
+  color: transparent; }
+
+.product_active .product__accordion {
+  width: 500px;
+  height: 50px;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Proxima Nova Semibold;
+  font-size: 18px; }
+
+.product_active .product__line {
+  width: 500px;
+  height: 2px;
+  background-color: #f9f8f6;
+  margin-top: -145px; }
+
+.product_active .product__plus {
+  margin-top: -222px;
+  margin-left: 380px;
+  background-image: url(assets/images/close_icon.png);
+  background-repeat: no-repeat;
+  position: relative;
+  border: 0;
+  background: transparent;
+  -ms-transform: scale(0);
+      transform: scale(0);
+  width: 9px;
+  height: 9px; }
+
+.product_active .product__panel {
+  width: 500px;
+  padding: 30px;
+  background-color: #f9f8f6;
+  font-size: 16px;
+  line-height: 34px;
+  color: #000000; }
+
+@media only screen and (max-width: 414px) {
+  .product__line, .product__plus {
+    display: none; } }
+@media screen and (max-width: 414px) {
+  #hm {
+    width: 28px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 70px; } }

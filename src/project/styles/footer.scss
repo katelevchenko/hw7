@@ -61,7 +61,7 @@
     height: 24px;
     background-repeat: no-repeat;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .footer {
         margin-top: 160px;
     }
@@ -101,7 +101,7 @@
         padding-right: 20px; 
     }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
     .footer {
         &__elements {
             max-width: 300px;

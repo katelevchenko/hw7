@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("../../../../assets/fonts/proximanova-regular-webfont.woff2") format("woff2");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url("../../../../assets/fonts/Proxima-Nova-Semibold.woff2") format("woff2");
+    font-weight: 200;
+}
+.product {
+    &__accordion {
+        width: 500px;
+        height: 40px;
+        cursor: pointer;
+        text-align: left;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-family: Proxima Nova Semibold;
+        font-size: 18px;
+    }
+    &__line {
+        width: 500px;
+        height: 2px;
+        background-color: #f9f8f6;
+        margin-top: -66px;
+    }
+    &__plus {
+        position:relative;
+        margin-top: -140px;
+        margin-left: 380px;
+        left:100px;
+        top:100px;
+        border: 1px dotted white;
+        width: 3px;
+        height: 3px;
+        background-color: black;
+        box-sizing: border-box;
+        transform: scale(3);
+    }
+    &__panel {
+        color: transparent;
+    }
+    &_active {
+        .product__accordion {
+            width: 500px;
+            height: 50px;
+            cursor: pointer;
+            text-align: left;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-family: Proxima Nova Semibold;
+            font-size: 18px;
+        }
+        .product__line {
+            width: 500px;
+            height: 2px;
+            background-color: #f9f8f6;
+            margin-top: -187px;
+        }
+        .product__plus {
+            margin-top: -222px;
+            margin-left: 380px;
+            background-image: url(../../../../assets/images/close_icon.png);
+            background-repeat: no-repeat; 
+            position: relative;
+            border: 0;
+            background: transparent;
+            transform: scale(0);
+            width: 9px;
+            height: 9px;  
+        }
+        .product__panel {
+            width: 500px;
+            padding: 30px;
+            background-color: #f9f8f6;
+            font-size: 16px;
+            line-height: 34px;
+            color: #000000;
+        }
+    }   
+}
+@media only screen and (max-width: 414px) {
+    .product__line, .product__plus {
+        display: none;
+    }
+}

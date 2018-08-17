@@ -21,47 +21,16 @@
     @include LogoPositionDimension;
     margin-top: 20px;
 }
+#hm {
+    display: none;
+}
 .header-menu__nav-items {
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
     align-content: space-between;
-    max-width: 600px;
-}
-.header-menu__nav-items_item-active {
-    list-style-type: none;
-    text-decoration: none;
-    color: $base-active_color;
-    font-family: "Proxima Nova Semibold";
-    font-weight: 300;
-    font-size: $base-font-size;
-    letter-spacing: 2px;
-    padding: 12px;
-    margin-top: 6px;
-}
-.header-menu__nav-items_item {
-    @include MenuLinkDecoration; 
-    padding: 12px;
-    margin-top: 6px;
-}
-.header-menu__nav-items_arrow-active {
-    border: solid $base-active_color;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 2px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    margin-bottom: 2px;
-}
-.header-menu__nav-items_arrow {
-    border: solid  #33333a;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 2px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-left: -10px;
-    margin-bottom: 4px;
+    margin-left: 10px; 
+    max-width: 500px;
 }
 .header-menu__account-panel {
     display: flex;
@@ -110,6 +79,7 @@
         &_item {
             margin-right: 30px;
             @include  MenuLinkBreadcrumbsDecoration;
+            z-index: 2;
         }
         &_link {
             @include  MenuLinkBreadcrumbsDecoration;
@@ -127,20 +97,14 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .header-menu__nav {
-        margin-left: 20px;
-    }
+@media only screen and (max-width: 1200px) {
     .header-menu__nav {
         max-width: 600px;
+        margin-left: 20px;
     }
     .header-menu__nav-items {
         max-width: 400px;
         padding-left: 20px;
-    }
-    .header-menu__nav-items_item, .header-menu__nav-items_item-active {
-        padding: 8px;
-        font-size: 12px;
     }
     .header-menu__account-panel {
         &_registration {
@@ -206,12 +170,6 @@
         width: 360px; 
         margin: 0;
     }
-    .header-menu__nav_hamburger_menu {
-        width: 28px;
-        height: 20px;
-        margin-top: 12px;
-        margin-left: 90px;
-    }
     .header-menu__nav-items_item-active, .header-menu__nav-items_item {
         display: none;
     }
@@ -227,6 +185,28 @@
         &__menu {
             height: 60px;
         }
+    }
+}
+@media screen and (max-width: 360px) {
+    .header-menu {
+        max-width: 320px;
+    }
+    .header-menu__nav {
+        width: 320px; 
+    }
+    .header-menu__nav_logo {
+        margin-left: 100px;
+    }
+    .header-menu__nav_hamburger_menu {
+        margin-left: 50px;
+    }
+    .breadcrumbs__menu_item {
+        font-size: 8px;
+        margin-right: 24px;
+    }
+    .breadcrumbs__menu_arrow {
+        padding: 1px;
+        margin-right: 6px;
     }
 }
 @media screen and (max-width: 320px) {

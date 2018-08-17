@@ -64,7 +64,7 @@
         padding-top: 60px;
     } 
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .photo-gallery__photos {
         max-width: 1000px;
         &_photo-girl-glass {
@@ -127,6 +127,9 @@
     width: 414px;
     height: 356px;
     background-image: url(../../assets/images/two_pants_mobile.png);
+    }
+    .phototext__photo_contain {
+        margin-top: -70px;
     }
     .phototext__text_gray, .phototext__text_black {
         max-width: 320px;

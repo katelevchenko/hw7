@@ -117,7 +117,7 @@
         margin-top: 440px;
     }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .product-alternatives_title{
         width: 1000px;
     }
@@ -218,7 +218,7 @@
         display: none;
     }
     .review__top_rws {
-        margin-top: -40px;
+        margin-top: -45px;
     }
     .product-alternatives_title {
         max-width: 360px;
@@ -233,6 +233,14 @@
     .review__customer-review_comment {
         font-size: 16px;
         line-height: 28px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .review__top_rws {
+        margin-top: -45px;
+    }
+    .product-alternatives__photos {
+        max-width: 320px;
     }
 }
 @media screen and (max-width: 320px) {

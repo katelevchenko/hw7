@@ -9148,8 +9148,361 @@ module.exports = __webpack_require__(426);
 
 __webpack_require__(427);
 
+var _accordion_shop = __webpack_require__(428);
+
+var _accordion_features_care = __webpack_require__(430);
+
+var _hamburger_menu = __webpack_require__(432);
+
+var accordionshop = new _accordion_shop.AccordionShop(document.querySelector('shop'));
+
+var accordionfc = new _accordion_features_care.AccordionFC(document.querySelector('#FC'));
+
+var accordionfc2 = new _accordion_features_care.AccordionFC2(document.querySelector('#FC2'));
+
+var hamburger = new _hamburger_menu.Hamburger(document.querySelector('#hm'));
+
 /***/ }),
 /* 427 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 428 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.AccordionShop = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+__webpack_require__(429);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var AccordionShop = exports.AccordionShop = function () {
+    function AccordionShop(targetEl) {
+        var _this = this;
+
+        _classCallCheck(this, AccordionShop);
+
+        this.target = targetEl;
+        this.isEnabled = false;
+        this.render();
+        this.link.addEventListener('click', function () {
+            return _this.toggle();
+        });
+    }
+
+    _createClass(AccordionShop, [{
+        key: 'accordionmenuOpen',
+        value: function accordionmenuOpen() {
+            this.target.classList.add('headershop_active');
+            this.isEnabled = true;
+        }
+    }, {
+        key: 'accordionmenuClosed',
+        value: function accordionmenuClosed() {
+            this.target.classList.remove('headershop_active');
+            this.isEnabled = false;
+        }
+    }, {
+        key: 'toggle',
+        value: function toggle() {
+            if (this.isEnabled) {
+                this.accordionmenuClosed();
+            } else {
+                this.accordionmenuOpen();
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            this.item = document.createElement('a');
+            this.item.textContent = 'SHOP';
+            this.item.classList.add('headershop__link_item');
+            this.itemf = document.createElement('a');
+            this.itemf.textContent = 'FABRIC';
+            this.itemf.classList.add('headershop__link_itemf');
+            this.itemj = document.createElement('a');
+            this.itemj.textContent = 'JOURNAL';
+            this.itemj.classList.add('headershop__link_itemj');
+            this.itema = document.createElement('a');
+            this.itema.textContent = 'ABOUT';
+            this.itema.classList.add('headershop__link_itema');
+
+            this.arrow = document.createElement('span');
+            this.arrow.classList.add('headershop__link_arrow');
+            this.arrowf = document.createElement('span');
+            this.arrowf.classList.add('headershop__link_arrowf');
+
+            this.panel = document.createElement('div');
+            this.panel.textContent = 'Jeans Jackets Shirts Pants';
+            this.panel.classList.add('headershop__link_panel');
+            this.panelf = document.createElement('div');
+            this.panelf.textContent = 'Cotton Silk Linen Wool';
+            this.panelf.classList.add('headershop__link_panelf');
+
+            this.link = document.createElement('li');
+            this.link.classList.add('headershop__link');
+            this.linkf = document.createElement('li');
+            this.linkf.classList.add('headershop__linkf');
+            this.linkf.appendChild(this.itemf);
+            this.link.appendChild(this.item);
+            this.link.appendChild(this.arrow);
+            this.link.appendChild(this.arrowf);
+            this.link.appendChild(this.panel);
+            this.link.appendChild(this.panelf);
+
+            this.headershop = document.createElement('ul');
+            this.headershop.classList.add('headershop');
+            this.headershop.appendChild(this.link);
+            this.headershop.appendChild(this.linkf);
+
+            this.target.appendChild(this.headershop);
+            this.target.classList.add('headershop');
+        }
+    }]);
+
+    return AccordionShop;
+}();
+
+/***/ }),
+/* 429 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 430 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.AccordionFC2 = exports.AccordionFC = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+__webpack_require__(431);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var AccordionFC = exports.AccordionFC = function () {
+    function AccordionFC(targetEl) {
+        var _this = this;
+
+        _classCallCheck(this, AccordionFC);
+
+        this.target = targetEl;
+        this.isEnabled = false;
+        this.render();
+        this.accordion.addEventListener('click', function () {
+            return _this.toggle();
+        });
+    }
+
+    _createClass(AccordionFC, [{
+        key: 'accordionfcOpen',
+        value: function accordionfcOpen() {
+            this.target.classList.add('product_active');
+            this.isEnabled = true;
+        }
+    }, {
+        key: 'accordionfcClosed',
+        value: function accordionfcClosed() {
+            this.target.classList.remove('product_active');
+            this.isEnabled = false;
+        }
+    }, {
+        key: 'toggle',
+        value: function toggle() {
+            if (this.isEnabled) {
+                this.accordionfcClosed();
+            } else {
+                this.accordionfcOpen();
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            this.accordion = document.createElement('button');
+            this.line = document.createElement('span');
+            this.plus = document.createElement('span');
+            this.panel = document.createElement('div');
+
+            this.accordion.classList.add('product__accordion');
+            this.line.classList.add('product__line');
+            this.plus.classList.add('product__plus');
+            this.panel.classList.add('product__panel');
+
+            this.accordion.textContent = 'Features';
+            this.panel.textContent = 'A perfect place to peruse an insider perspective, long-form interviews and personal essays';
+
+            this.target.appendChild(this.accordion);
+            this.target.appendChild(this.panel);
+            this.target.appendChild(this.line);
+            this.target.appendChild(this.plus);
+            this.target.classList.add('product');
+        }
+    }]);
+
+    return AccordionFC;
+}();
+
+var AccordionFC2 = exports.AccordionFC2 = function () {
+    function AccordionFC2(targetEl) {
+        var _this2 = this;
+
+        _classCallCheck(this, AccordionFC2);
+
+        this.target = targetEl;
+        this.isEnabled = false;
+        this.render();
+        this.accordion.addEventListener('click', function () {
+            return _this2.toggle();
+        });
+    }
+
+    _createClass(AccordionFC2, [{
+        key: 'accordionfcOpen',
+        value: function accordionfcOpen() {
+            this.target.classList.add('product_active');
+            this.isEnabled = true;
+        }
+    }, {
+        key: 'accordionfcClosed',
+        value: function accordionfcClosed() {
+            this.target.classList.remove('product_active');
+            this.isEnabled = false;
+        }
+    }, {
+        key: 'toggle',
+        value: function toggle() {
+            if (this.isEnabled) {
+                this.accordionfcClosed();
+            } else {
+                this.accordionfcOpen();
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            this.accordion = document.createElement('button');
+            this.line = document.createElement('span');
+            this.plus = document.createElement('span');
+            this.panel = document.createElement('div');
+
+            this.accordion.classList.add('product__accordion');
+            this.line.classList.add('product__line');
+            this.plus.classList.add('product__plus');
+            this.panel.classList.add('product__panel');
+
+            this.accordion.textContent = 'Fabric Care';
+            this.panel.textContent = 'Cotton is a natural fibre collected from the cotton plant and spun into thread';
+
+            this.target.appendChild(this.accordion);
+            this.target.appendChild(this.panel);
+            this.target.appendChild(this.line);
+            this.target.appendChild(this.plus);
+            this.target.classList.add('product');
+        }
+    }]);
+
+    return AccordionFC2;
+}();
+
+/***/ }),
+/* 431 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 432 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Hamburger = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+__webpack_require__(433);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Hamburger = exports.Hamburger = function () {
+    function Hamburger(targetEl) {
+        var _this = this;
+
+        _classCallCheck(this, Hamburger);
+
+        this.target = targetEl;
+        this.isEnabled = false;
+        this.render();
+        this.hamburger.addEventListener('click', function () {
+            return _this.toggle();
+        });
+    }
+
+    _createClass(Hamburger, [{
+        key: 'hamburgermenuOpen',
+        value: function hamburgermenuOpen() {
+            this.target.classList.add('hamburger_active');
+            this.isEnabled = true;
+        }
+    }, {
+        key: 'hamburgermenuClosed',
+        value: function hamburgermenuClosed() {
+            this.target.classList.remove('hamburger_active');
+            this.isEnabled = false;
+        }
+    }, {
+        key: 'toggle',
+        value: function toggle() {
+            if (this.isEnabled) {
+                this.hamburgermenuClosed();
+            } else {
+                this.hamburgermenuOpen();
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            this.hamburger = document.createElement('button');
+            this.panel = document.createElement('div');
+
+            this.hamburger.classList.add('hamburger');
+            this.panel.classList.add('hamburger_panel');
+
+            this.panel.textContent = 'Explore the latest fashion trends and fashion news on Vogue';
+            this.hamburger.contentEditable;
+
+            this.target.appendChild(this.hamburger);
+            this.target.appendChild(this.panel);
+            this.target.classList.add('hamburger');
+        }
+    }]);
+
+    return Hamburger;
+}();
+
+/***/ }),
+/* 433 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

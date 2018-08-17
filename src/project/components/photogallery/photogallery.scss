@@ -1,0 +1,61 @@
+.photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-flow: wrap;
+    &__photo1 {
+        background-image: url(../../../../assets/images/blue_small.png);
+        width: 69px;
+        height: 69px;
+        margin-top: 20px;
+    }
+    &__photo2 {
+        background-image: url(../../../../assets/images/black_small.png);
+        width: 69px;
+        height: 69px;
+        margin-top: 20px;
+    }
+    &__photo3 {
+        background-image: url(../../../../assets/images/shorts_small.png);
+        width: 69px;
+        height: 69px;
+        margin-top: 20px;
+    }
+    &__photo4 {
+        background-image: url(../../../../assets/images/dress_small.png);
+        width: 69px;
+        height: 69px;
+        margin-top: 20px;
+    }
+    &__photo5 {
+        background-image: url(../../../../assets/images/pink_small.png);
+        width: 69px;
+        height: 69px;
+        margin-top: 20px;
+    }
+}  
+.photos__photo1_bigphoto1 {
+    background-image: url(../../../../assets/images/blue_big.png);
+    width: 455px;
+    height: 684px;
+}
+.photos__photo2_bigphoto2 {
+    background-image: url(../../../../assets/images/black_big.png);
+    width: 455px;
+    height: 684px;
+}
+.photos__photo3_bigphoto3 {
+    background-image: url(../../../../assets/images/shorts_big.png);
+    width: 455px;
+    height: 684px;
+}
+.photos__photo4_bigphoto4 {
+    background-image: url(../../../../assets/images/dress_big.png);
+    width: 455px;
+    height: 684px;
+}
+.photos__photo5_bigphoto5 {
+    background-image: url(../../../../assets/images/pink_big.png);
+    width: 455px;
+    height: 684px;
+}
