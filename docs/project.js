@@ -9156,8 +9156,6 @@ var _photogallery = __webpack_require__(432);
 
 var _hamburger_menu = __webpack_require__(434);
 
-var _counter = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/counter/counter\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 var accordionfc = new _accordion_features_care.AccordionFC(document.querySelector('#FC'));
 
 var accordionfc2 = new _accordion_features_care.AccordionFC2(document.querySelector('#FC2'));
@@ -9167,8 +9165,6 @@ var accordionmenu = new _accordion_menu.AccordionMenu(document.querySelector('#m
 var photogallery = new _photogallery.PhotoGallery(document.querySelector('#phg'));
 
 var hamburger = new _hamburger_menu.Hamburger(document.querySelector('#hm'));
-
-var counter = new _counter.Counter(document.querySelector('#counter'));
 
 /***/ }),
 /* 427 */
