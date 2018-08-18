@@ -1864,22 +1864,3 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     padding: 12px; } }
-.counter {
-  width: 120px;
-  height: 40px;
-  border: solid 1px #dedede; }
-  .counter__down {
-    width: 40px;
-    height: 40px;
-    background-color: #f3f3f3;
-    background-image: url(assets/images/minus.png); }
-  .counter__up {
-    width: 40px;
-    height: 40px;
-    background-color: #f3f3f3;
-    background-image: url(assets/images/plus.png); }
-  .counter__number {
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    color: #686868; }

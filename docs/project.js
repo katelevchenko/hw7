@@ -9156,7 +9156,7 @@ var _photogallery = __webpack_require__(432);
 
 var _hamburger_menu = __webpack_require__(434);
 
-var _counter = __webpack_require__(436);
+var _counter = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/counter/counter\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var accordionfc = new _accordion_features_care.AccordionFC(document.querySelector('#FC'));
 
@@ -9703,93 +9703,6 @@ var Hamburger = exports.Hamburger = function () {
 
 /***/ }),
 /* 435 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 436 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Counter = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(437);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Counter = exports.Counter = function () {
-    function Counter(targetEl) {
-        var _this = this;
-
-        _classCallCheck(this, Counter);
-
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.down.addEventListener('click', function () {
-            return _this.counter();
-        });
-        this.up.addEventListener('click', function () {
-            return _this.counter();
-        });
-    }
-
-    _createClass(Counter, [{
-        key: 'counterup',
-        value: function counterup() {
-            this.number.innerHTML = +this.number.innerHTML + 1;
-        }
-    }, {
-        key: 'counterdown',
-        value: function counterdown() {
-            this.number.innerHTML = +this.number.innerHTML - 1;
-        }
-    }, {
-        key: 'counter',
-        value: function counter() {
-            if (event.target.classList('.counter__up')) {
-                counterup();
-            } else if (event.target.classList('.counter__down')) {
-                counterdown();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.counter = document.createElement('div');
-            this.counter.classList.add('counter');
-
-            this.down = document.createElement('span');
-            this.down.classList.add('counter__down');
-            this.counter.appendChild(this.down);
-
-            this.number = document.createElement('span');
-            this.number.classList.add('counter__number');
-            this.number.textContent = '0';
-            this.counter.appendChild(this.number);
-
-            this.up = document.createElement('span');
-            this.up.classList.add('counter__up');
-            this.counter.appendChild(this.up);
-
-            this.target.classList.add('counter__down');
-            this.target.classList.add('counter__up');
-        }
-    }]);
-
-    return Counter;
-}();
-
-/***/ }),
-/* 437 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
