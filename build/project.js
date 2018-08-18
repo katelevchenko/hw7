@@ -9844,6 +9844,7 @@ var PhotoGallery = exports.PhotoGallery = function () {
         value: function attachEvents() {
             var _this = this;
 
+            this.linkOnPhoto(this.bigphoto, 'photos__photo1_bigphoto1');
             this.photo1.addEventListener('click', function () {
                 _this.resetBigPhotoStyles();
                 _this.linkOnPhoto(_this.bigphoto, 'photos__photo1_bigphoto1');
@@ -9871,7 +9872,6 @@ var PhotoGallery = exports.PhotoGallery = function () {
 
             this.photos = document.createElement('div');
             this.photos.classList.add('photos');
-
             this.bigphoto = document.createElement('div');
 
             this.photo1 = document.createElement('div');
@@ -9889,6 +9889,9 @@ var PhotoGallery = exports.PhotoGallery = function () {
             this.photo4 = document.createElement('div');
             this.photo4.classList.add('photos__photo4');
             this.photos.appendChild(this.photo4);
+
+            this.photo5 = document.createElement('div');
+            this.photo5.classList.add('photos__photo5');
             this.photos.appendChild(this.photo5);
 
             this.target.appendChild(this.photos);

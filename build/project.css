@@ -339,73 +339,6 @@ body {
   src: url(assets/fonts/WorkSans-Medium.woff2) format("woff2");
   font-weight: 500; }
 
-.product {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  margin: 0 auto;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  max-width: 1240px;
-  margin-top: 15px; }
-
-.product__photo-list {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 100px; }
-  .product__photo-list_blue-small {
-    background-image: url(assets/images/blue_small.png);
-    width: 69px;
-    height: 69px;
-    margin-top: 20px; }
-  .product__photo-list_black_small {
-    background-image: url(assets/images/black_small.png);
-    width: 69px;
-    height: 69px;
-    margin-top: 20px; }
-  .product__photo-list_shorts-small {
-    background-image: url(assets/images/shorts_small.png);
-    width: 69px;
-    height: 69px;
-    margin-top: 20px; }
-  .product__photo-list_dress-small {
-    background-image: url(assets/images/dress_small.png);
-    width: 69px;
-    height: 69px;
-    margin-top: 20px; }
-  .product__photo-list_pink-small {
-    background-image: url(assets/images/pink_small.png);
-    width: 69px;
-    height: 69px;
-    margin-top: 20px; }
-
-.product__description-product_photo {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  max-width: 500px;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  margin-left: -40px; }
-  .product__description-product_photo_large-photo {
-    background-image: url(assets/images/blue_big.png);
-    width: 455px;
-    height: 684px;
-    margin-top: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 100%; }
-
 .product__description-product {
   max-width: 640px;
   margin-top: 20px; }
@@ -760,9 +693,13 @@ body {
       font-size: 16px;
       margin-top: 330px; }
   .photo-gallery__text {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .phototext__photo_contain {
+    margin-top: -70px; } }
 
 @media only screen and (max-width: 768px) {
+  .phototext__photo_contain {
+    margin-top: -50px; }
   .photo-gallery__text_content {
     max-width: 680px; }
   .phototext__text_gray, .phototext__text_black {
@@ -1625,15 +1562,34 @@ body {
 @media only screen and (max-width: 414px) {
   .product__line, .product__plus {
     display: none; } }
-.photos {
+.product {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin: 0 auto;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap; }
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  max-width: 1240px;
+  margin-top: 15px; }
+
+#phg {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 600px; }
+
+.photos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100px; }
   .photos__photo1 {
     background-image: url(assets/images/blue_small.png);
     width: 69px;
@@ -1661,29 +1617,202 @@ body {
     margin-top: 20px; }
 
 .photos__photo1_bigphoto1 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 500px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-top: 19px;
   background-image: url(assets/images/blue_big.png);
   width: 455px;
   height: 684px; }
 
 .photos__photo2_bigphoto2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 500px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-top: 19px;
   background-image: url(assets/images/black_big.png);
   width: 455px;
   height: 684px; }
 
 .photos__photo3_bigphoto3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 500px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-top: 19px;
   background-image: url(assets/images/shorts_big.png);
   width: 455px;
   height: 684px; }
 
 .photos__photo4_bigphoto4 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 500px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-top: 19px;
   background-image: url(assets/images/dress_big.png);
   width: 455px;
   height: 684px; }
 
 .photos__photo5_bigphoto5 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 500px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-top: 19px;
   background-image: url(assets/images/pink_big.png);
   width: 455px;
   height: 684px; }
+
+@media only screen and (max-width: 1200px) {
+  .photos__photo1_bigphoto1 {
+    background-image: url(assets/images/blue_big_0.8.png);
+    background-repeat: no-repeat;
+    width: 366px;
+    height: 548px; }
+  .photos__photo2_bigphoto2 {
+    background-image: url(assets/images/black_big_0.8.png);
+    background-repeat: no-repeat;
+    width: 366px;
+    height: 548px; }
+  .photos__photo3_bigphoto3 {
+    background-image: url(assets/images/shorts_big_0.8.png);
+    background-repeat: no-repeat;
+    width: 366px;
+    height: 548px; }
+  .photos__photo4_bigphoto4 {
+    background-image: url(assets/images/dress_big_0.8.png);
+    background-repeat: no-repeat;
+    width: 366px;
+    height: 548px; }
+  .photos__photo5_bigphoto5 {
+    background-image: url(assets/images/pink_big_0.8.png);
+    background-repeat: no-repeat;
+    width: 366px;
+    height: 548px; }
+  #phg {
+    max-width: 500px;
+    margin-top: 20px; }
+  .product {
+    max-width: 1000px; } }
+
+@media only screen and (max-width: 768px) {
+  .product {
+    max-width: 740px; }
+  #phg {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    max-width: 300px; }
+  .photos__photo1_bigphoto1 {
+    background-image: url(assets/images/blue_big_0.6.png);
+    width: 315px;
+    height: 473px;
+    -ms-flex-order: 1;
+        order: 1; }
+  .photos__photo2_bigphoto2 {
+    background-image: url(assets/images/black_big_0.6.png);
+    width: 315px;
+    height: 473px;
+    -ms-flex-order: 1;
+        order: 1; }
+  .photos__photo3_bigphoto3 {
+    background-image: url(assets/images/shorts_big_0.6.png);
+    width: 315px;
+    height: 473px;
+    -ms-flex-order: 1;
+        order: 1; }
+  .photos__photo4_bigphoto4 {
+    background-image: url(assets/images/dress_big_0.6.png);
+    width: 315px;
+    height: 473px;
+    -ms-flex-order: 1;
+        order: 1; }
+  .photos__photo5_bigphoto5 {
+    background-image: url(assets/images/pink_big_0.6.png);
+    width: 315px;
+    height: 473px;
+    -ms-flex-order: 1;
+        order: 1; }
+  .photos {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    width: 310px;
+    -ms-flex-order: 2;
+        order: 2; }
+  .product__description-product {
+    max-width: 400px;
+    margin-top: -660px;
+    margin-left: 340px; } }
+
+@media only screen and (max-width: 414px) {
+  .product {
+    margin: 0 auto;
+    max-width: 390px;
+    padding: 0; }
+  .photos {
+    -ms-flex-order: 2;
+        order: 2; }
+  .product__description-product {
+    max-width: 390px;
+    margin: 0 auto;
+    -ms-flex-order: 3;
+        order: 3; }
+  #phg {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 375px) {
+  .product {
+    max-width: 360px;
+    margin: 0 auto; }
+  #phg {
+    max-width: 320px; }
+  .product__description-product {
+    max-width: 320px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 320px) {
+  .product {
+    max-width: 300px;
+    padding: 0; }
+  .product__description-product {
+    margin: 0 auto;
+    max-width: 300px; }
+  #phg {
+    max-width: 310px;
+    margin: 0 auto; } }
 @media screen and (max-width: 414px) {
   #hm {
     width: 28px;
