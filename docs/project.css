@@ -103,15 +103,15 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+#hmsvg {
+  display: none; }
+
 .header-menu__nav_logo {
   background-image: url(assets/images/matter.png);
   background-repeat: no-repeat;
   height: 40px;
   width: 120px;
   margin-top: 20px; }
-
-#hm {
-  display: none; }
 
 .header-menu__nav-items {
   display: -ms-flexbox;
@@ -1409,84 +1409,6 @@ body {
   src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
   font-weight: 200; }
 
-.headershop {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  height: 40px;
-  padding: 0;
-  padding-left: 10px;
-  max-width: 500px; }
-  .headershop__link, .headershop__linka {
-    list-style-type: none;
-    margin-top: 13px; }
-  .headershop__link_item, .headershop__linka_itema {
-    list-style-type: none;
-    text-decoration: none;
-    color: #33333a;
-    font-family: "Proxima Nova Semibold";
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 2px;
-    padding: 12px; }
-  .headershop__link_arrow, .headershop__linka_arrowa {
-    border: solid  #33333a;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 2px;
-    -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-left: -10px;
-    margin-bottom: 4px; }
-  .headershop__link_panel, .headershop__linka_panela {
-    height: 500px;
-    background: white;
-    display: none; }
-  .headershop_active .headershop__link_item, .headershop_active .headershop__linka_itema {
-    color: #ff6008; }
-  .headershop_active .headershop__link_arrow, .headershop_active .headershop__linka_arrowa {
-    border: solid #ff6008;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 2px;
-    -ms-transform: rotate(-135deg);
-        transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    margin-bottom: 2px; }
-  .headershop_active .headershop__link_panel, .headershop_active .headershop__linka_panela {
-    width: 70px;
-    height: 100px;
-    background-color: #ffffff;
-    z-index: 1;
-    color: #33333a;
-    padding: 10px;
-    display: -ms-flexbox;
-    display: flex; }
-
-@media only screen and (max-width: 1024px) {
-  .headershop {
-    padding: 0; }
-    .headershop__link_item {
-      font-size: 12px;
-      padding: 12px; }
-  .header-menu__nav-items {
-    margin: 0; } }
-@font-face {
-  font-family: "Proxima Nova Regular";
-  src: url(assets/fonts/proximanova-regular-webfont.woff2) format("woff2");
-  font-weight: 200; }
-
-@font-face {
-  font-family: "Proxima Nova Semibold";
-  src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
-  font-weight: 200; }
-
 .product__accordion {
   width: 500px;
   height: 40px;
@@ -1561,6 +1483,96 @@ body {
 
 @media only screen and (max-width: 414px) {
   .product__line, .product__plus {
+    display: none; } }
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url(assets/fonts/proximanova-regular-webfont.woff2) format("woff2");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
+  font-weight: 200; }
+
+#menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 40px;
+  padding: 0;
+  padding-left: 10px;
+  max-width: 400px; }
+
+.headershop__link {
+  list-style-type: none;
+  margin-top: 25px;
+  padding-left: 8px; }
+
+.headershop__link_item {
+  list-style-type: none;
+  text-decoration: none;
+  color: #33333a;
+  font-family: "Proxima Nova Semibold";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 12px; }
+
+.headershop__link_arrow {
+  border: solid  #33333a;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 2px;
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: -10px;
+  margin-bottom: 4px; }
+
+.headershop__link_panel {
+  height: 500px;
+  background: white;
+  display: none; }
+
+.headershop__link_active .headershop__link_item {
+  color: #ff6008; }
+
+.headershop__link_active .headershop__link_arrow {
+  border: solid #ff6008;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 2px;
+  -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-bottom: 2px; }
+
+.headershop__link_active .headershop__link_panel {
+  width: 70px;
+  height: 100px;
+  background-color: #ffffff;
+  z-index: 1;
+  color: #33333a;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media only screen and (max-width: 1024px) {
+  .headershop {
+    padding: 0; }
+    .headershop__link_item {
+      font-size: 12px;
+      padding: 12px; }
+  .header-menu__nav-items {
+    margin: 0; } }
+
+@media only screen and (max-width: 414px) {
+  #menu {
     display: none; } }
 .product {
   display: -ms-flexbox;
@@ -1813,12 +1825,45 @@ body {
   #phg {
     max-width: 310px;
     margin: 0 auto; } }
-@media screen and (max-width: 414px) {
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url(assets/fonts/proximanova-regular-webfont.woff2) format("woff2");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2");
+  font-weight: 200; }
+
+@media screen and (min-width: 414px) {
   #hm {
-    width: 28px;
-    height: 20px;
-    margin-top: 12px;
-    margin-left: 70px; } }
+    display: none; } }
+
+@media screen and (max-width: 414px) {
+  .hamburger__panel-icon {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 35px;
+    height: 24px;
+    background-image: url(assets/images/burger_menu_icon.png); }
+  .hamburger {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    max-width: 250px; }
+  .hamburger__panel {
+    height: 200px;
+    list-style-type: none; }
+  .hamburger__panel_active .hamburger__panel-icon_shop, .hamburger__panel_active .hamburger__panel-icon_fabric, .hamburger__panel_active .hamburger__panel-icon_journal, .hamburger__panel_active .hamburger__panel-icon_about {
+    text-decoration: none;
+    list-style-type: none;
+    color: #33333a;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 12px; } }
 .counter {
   width: 120px;
   height: 40px;

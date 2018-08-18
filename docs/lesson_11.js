@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 373);
+/******/ 	return __webpack_require__(__webpack_require__.s = 372);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9079,26 +9079,25 @@ module.exports = function (regExp, replace) {
 /* 369 */,
 /* 370 */,
 /* 371 */,
-/* 372 */,
-/* 373 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(374);
+module.exports = __webpack_require__(373);
 
 
 /***/ }),
-/* 374 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _lighter = __webpack_require__(375);
+var _lighter = __webpack_require__(374);
 
-var _bulb = __webpack_require__(377);
+var _bulb = __webpack_require__(376);
 
-var _garland = __webpack_require__(379);
+var _garland = __webpack_require__(378);
 
 var firstLighter = new _lighter.Lighter(document.querySelector('#lighter1'));
 
@@ -9202,7 +9201,7 @@ var garland = new _garland.Garland(document.querySelector('#garland1'), [new _bu
 // someDrive.drive();
 
 /***/ }),
-/* 375 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9215,7 +9214,7 @@ exports.Lighter = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(376);
+__webpack_require__(375);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9266,13 +9265,13 @@ var Lighter = function () {
 exports.Lighter = Lighter;
 
 /***/ }),
-/* 376 */
+/* 375 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 377 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9285,7 +9284,7 @@ exports.Bulb = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(378);
+__webpack_require__(377);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9328,13 +9327,13 @@ var Bulb = exports.Bulb = function () {
 }();
 
 /***/ }),
-/* 378 */
+/* 377 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 379 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
