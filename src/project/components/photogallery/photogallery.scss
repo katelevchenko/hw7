@@ -1,8 +1,24 @@
+@import './mixins.scss';
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: space-around;
+    max-width: 1240px;
+    margin-top: 15px;
+}
+#phg {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
 .photos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-flow: wrap;
+    width: 100px;
     &__photo1 {
         background-image: url(../../../../assets/images/blue_small.png);
         width: 69px;
@@ -35,27 +51,169 @@
     }
 }  
 .photos__photo1_bigphoto1 {
+    @include PhotogalleryBigPhotoPosition;
     background-image: url(../../../../assets/images/blue_big.png);
     width: 455px;
     height: 684px;
 }
 .photos__photo2_bigphoto2 {
+    @include PhotogalleryBigPhotoPosition;
     background-image: url(../../../../assets/images/black_big.png);
     width: 455px;
     height: 684px;
 }
 .photos__photo3_bigphoto3 {
+    @include PhotogalleryBigPhotoPosition;
     background-image: url(../../../../assets/images/shorts_big.png);
     width: 455px;
     height: 684px;
 }
 .photos__photo4_bigphoto4 {
+    @include PhotogalleryBigPhotoPosition;
     background-image: url(../../../../assets/images/dress_big.png);
     width: 455px;
     height: 684px;
 }
 .photos__photo5_bigphoto5 {
+    @include PhotogalleryBigPhotoPosition;
     background-image: url(../../../../assets/images/pink_big.png);
     width: 455px;
     height: 684px;
+}
+@media only screen and (max-width: 1200px) {
+    .photos__photo1_bigphoto1 {
+        background-image: url(../../../../assets/images/blue_big_0.8.png);
+        background-repeat: no-repeat;
+        width: 366px;
+        height: 548px;
+    }
+    .photos__photo2_bigphoto2 {
+        background-image: url(../../../../assets/images/black_big_0.8.png);
+        background-repeat: no-repeat;
+        width: 366px;
+        height: 548px;
+    }
+    .photos__photo3_bigphoto3 {
+        background-image: url(../../../../assets/images/shorts_big_0.8.png);
+        background-repeat: no-repeat;
+        width: 366px;
+        height: 548px;
+    }
+    .photos__photo4_bigphoto4 {
+        background-image: url(../../../../assets/images/dress_big_0.8.png);
+        background-repeat: no-repeat;
+        width: 366px;
+        height: 548px;
+    }
+    .photos__photo5_bigphoto5 {
+        background-image: url(../../../../assets/images/pink_big_0.8.png);
+        background-repeat: no-repeat;
+        width: 366px;
+        height: 548px;
+    }
+    #phg {
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    .product {
+        max-width: 1000px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .product {
+        max-width: 740px;
+    }
+    #phg {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .photos__photo1_bigphoto1 {
+        background-image: url(../../../../assets/images/blue_big_0.6.png);
+        width: 315px;
+        height: 473px;
+        order: 1;
+    }
+    .photos__photo2_bigphoto2 {
+        background-image: url(../../../../assets/images/black_big_0.6.png);
+        width: 315px;
+        height: 473px;
+        order: 1;
+    }
+    .photos__photo3_bigphoto3 {
+        background-image: url(../../../../assets/images/shorts_big_0.6.png);
+        width: 315px;
+        height: 473px;
+        order: 1;
+    }
+    .photos__photo4_bigphoto4 {
+        background-image: url(../../../../assets/images/dress_big_0.6.png);
+        width: 315px;
+        height: 473px;
+        order: 1;
+    }
+    .photos__photo5_bigphoto5 {
+        background-image: url(../../../../assets/images/pink_big_0.6.png);
+        width: 315px;
+        height: 473px;
+        order: 1;
+    }
+    .photos {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: wrap;
+        width: 310px;
+        order: 2;
+    }
+    .product__description-product {
+        max-width: 400px;
+        margin-top: -660px;
+        margin-left: 340px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .product {
+        margin: 0 auto;
+        max-width: 390px;
+        padding: 0; 
+    }
+    .photos {
+        order: 2;
+    }
+    .product__description-product {
+        max-width: 390px;
+        margin: 0 auto;
+        order: 3;
+    }
+    #phg {
+        margin: 0 auto;
+    }
+} 
+@media screen and (max-width: 375px) {
+    .product {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    #phg {
+        max-width: 320px;
+    }
+    .product__description-product {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 320px) {
+    .product {
+        max-width: 300px;
+        padding: 0;
+    }
+    .product__description-product {
+        margin: 0 auto;
+        max-width: 300px;
+    }  
+    #phg {
+        max-width: 310px;
+        margin: 0 auto;
+    }
 }

@@ -9873,7 +9873,6 @@ var PhotoGallery = exports.PhotoGallery = function () {
             this.photos.classList.add('photos');
 
             this.bigphoto = document.createElement('div');
-            // this.bigphoto.classList.add('photos__bigphoto1');
 
             this.photo1 = document.createElement('div');
             this.photo1.classList.add('photos__photo1');
@@ -9890,9 +9889,6 @@ var PhotoGallery = exports.PhotoGallery = function () {
             this.photo4 = document.createElement('div');
             this.photo4.classList.add('photos__photo4');
             this.photos.appendChild(this.photo4);
-
-            this.photo5 = document.createElement('div');
-            this.photo5.classList.add('photos__photo5');
             this.photos.appendChild(this.photo5);
 
             this.target.appendChild(this.photos);

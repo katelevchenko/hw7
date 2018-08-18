@@ -1,0 +1,8 @@
+@mixin PhotogalleryBigPhotoPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    flex-flow: wrap;
+    margin-top: 19px; 
+}

@@ -20,6 +20,7 @@ export class PhotoGallery {
     }
 
     attachEvents() {
+            this.linkOnPhoto(this.bigphoto, 'photos__photo1_bigphoto1');
         this.photo1.addEventListener('click', () => {
             this.resetBigPhotoStyles();
             this.linkOnPhoto(this.bigphoto, 'photos__photo1_bigphoto1');
@@ -46,10 +47,8 @@ export class PhotoGallery {
 
         this.photos = document.createElement('div');
         this.photos.classList.add('photos');
-
         this.bigphoto = document.createElement('div');
-        // this.bigphoto.classList.add('photos__bigphoto1');
-
+        
         this.photo1 = document.createElement('div');
         this.photo1.classList.add('photos__photo1');
         this.photos.appendChild(this.photo1);

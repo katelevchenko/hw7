@@ -1,58 +1,6 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-.product {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-content: space-around;
-    max-width: 1240px;
-    margin-top: 15px;
-}
-.product__photo-list {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    &_blue-small {
-        background-image: url(../../assets/images/blue_small.png);
-        @include ImgSmallPositionDimention;
-    }
-    &_black_small {
-        background-image: url(../../assets/images/black_small.png);
-        @include ImgSmallPositionDimention;
-    }
-    &_shorts-small {
-        background-image: url(../../assets/images/shorts_small.png);
-        @include ImgSmallPositionDimention;
-    }
-    &_dress-small {
-        background-image: url(../../assets/images/dress_small.png);
-        @include ImgSmallPositionDimention;
-    }
-    &_pink-small {
-        background-image: url(../../assets/images/pink_small.png);
-        @include ImgSmallPositionDimention;
-    }
-}
-.product__description-product_photo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 500px;
-    flex-flow: wrap;
-    margin-left: -40px;
-    &_large-photo {
-        background-image: url(../../assets/images/blue_big.png);
-        width: 455px;
-        height: 684px;
-        margin-top: 20px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        max-width: 100%;
-    }
-}
 .product__description-product {
     max-width: 640px;
     margin-top: 20px;
