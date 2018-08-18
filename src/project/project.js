@@ -23,8 +23,4 @@ import { Hamburger } from './components/hamburger_menu/hamburger_menu';
 
 const hamburger = new Hamburger(document.querySelector('#hm'));
 
-import { Counter } from './components/counter/counter';
-
-const counter = new Counter(document.querySelector('#counter'));
-
 
