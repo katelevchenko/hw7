@@ -1,25 +1,5 @@
 import './project.scss';
 
-import { AccordionShop } from './components/accordion_menu/accordion_shop';
-
-const accordionshop = new AccordionShop(document.querySelector('#shop'));
-
-
-import { AccordionFabric } from './components/accordion_menu/accordion_fabric';
-
-const accordionfabric = new AccordionFabric(document.querySelector('#fabric'));
-
-
-import { AccordionJournal } from './components/accordion_menu/accordion_journal';
-
-const accordionjournal = new AccordionJournal(document.querySelector('#journal'));
-
-
-import { AccordionAbout } from './components/accordion_menu/accordion_about';
-
-const accordionabout = new AccordionAbout(document.querySelector('#about'));
-
-
 import { AccordionFC } from './components/accordion_features_care/accordion_features_care';
 
 const accordionfc = new AccordionFC(document.querySelector('#FC'));

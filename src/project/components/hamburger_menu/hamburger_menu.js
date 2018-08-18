@@ -5,16 +5,16 @@ export class Hamburger {
         this.target = targetEl;
         this.isEnabled = false;
         this.render();
-        this.hamburger.addEventListener('click', () => this.toggle());
+        this.menuicon.addEventListener('click', () => this.toggle());
     }
 
     hamburgermenuOpen() {
-        this.target.classList.add('hamburger_active');
+        this.menuicon.classList.add('hamburger_panel_active');
         this.isEnabled = true;
     }
 
     hamburgermenuClosed() {
-        this.target.classList.remove('hamburger_active');
+        this.menuicon.classList.remove('hamburger_panel_active');
         this.isEnabled = false;
     }
     
@@ -28,18 +28,43 @@ export class Hamburger {
     }
     render() {
         this.hamburger = document.createElement('div');
-        this.menu = document.getElementById('hm');
-
+        this.menuicon = document.createElement('div');
         this.panel = document.createElement('div');
+        this.menubar = document.createElement('ul');
+        this.menushop = document.createElement('li');
+        this.elementshop = document.createElement('a');
+        this.menufabric = document.createElement('li');
+        this.elementfabric = document.createElement('a');
+        this.menujournal = document.createElement('li');
+        this.elementjournal = document.createElement('a');
+        this.menuabout = document.createElement('li');
+        this.elementabout = document.createElement('a');
 
         this.hamburger.classList.add('hamburger');
-        this.menu.classList.add('hamburger_menu')
-        this.panel.classList.add('hamburger_panel');
-    
-        this.panel.textContent = 'Explore the latest fashion trends and fashion news on Vogue';  
+        this.menuicon.classList.add('hamburger__panel-icon');
+        this.panel.classList.add('hamburger__panel');
+        this.menubar.classList.add('hamburger__panel');
+        this.menushop.classList.add('hamburger__panel-icon');
+        this.elementshop.classList.add('hamburger__panel-icon_shop');
+        this.menufabric.classList.add('hamburger__panel-icon');
+        this.elementfabric.classList.add('hamburger__panel-icon_fabric');
+        this.menujournal.classList.add('hamburger__panel-icon');
+        this.elementjournal.classList.add('hamburger__panel-icon_journal');
+        this.menuabout.classList.add('hamburger__panel-icon');
+        this.elementabout.classList.add('hamburger__panel-icon_about');
+      
+        this.hamburger.appendChild(this.panel);
+        this.panel.appendChild(this.menuicon);
+        this.menuicon.appendChild(this.menubar);
+        this.menubar.appendChild(this.menushop);
+        this.menubar.appendChild(this.menufabric);
+        this.menubar.appendChild(this.menujournal);
+        this.menubar.appendChild(this.menuabout);
+        this.menushop.appendChild(this.elementshop);
+        this.menufabric.appendChild(this.elementfabric);
+        this.menujournal.appendChild(this.elementjournal);
+        this.menuabout.appendChild(this.elementabout);
 
-        this.target.appendChild(this.menu);
-        this.target.appendChild(this.panel);
-        this.target.classList.add('hamburger');
+        this.target.appendChild(this.hamburger);
       }
 }

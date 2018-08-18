@@ -8,7 +8,7 @@
     src: url("../../../../assets/fonts/Proxima-Nova-Semibold.woff2") format("woff2");
     font-weight: 200;
 }
-.headershop {
+#menu {
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
@@ -16,12 +16,15 @@
     height: 40px;
     padding: 0;
     padding-left: 10px;
-    max-width: 500px;
-    &__link, &__linka {
+    max-width: 400px;
+}
+.headershop {
+    &__link {
         list-style-type: none;
-        margin-top: 13px;
+        margin-top: 25px;
+        padding-left: 8px;
     }
-    &__link_item, &__linka_itema {
+    &__link_item {
         list-style-type: none;
         text-decoration: none;
         color: #33333a;
@@ -31,7 +34,7 @@
         letter-spacing: 2px;
         padding: 12px;
     }
-    &__link_arrow, &__linka_arrowa {
+    &__link_arrow {
         border: solid  #33333a;
         border-width: 0 1px 1px 0;
         display: inline-block;
@@ -41,16 +44,16 @@
         margin-left: -10px;
         margin-bottom: 4px;
     }
-    &__link_panel, &__linka_panela {
+    &__link_panel {
         height: 500px;
         background: white;
         display: none;
     }
-    &_active {
-        .headershop__link_item, .headershop__linka_itema, {
+    &__link_active {
+        .headershop__link_item {
             color: #ff6008;
         }
-        .headershop__link_arrow,  .headershop__linka_arrowa {
+        .headershop__link_arrow {
             border: solid #ff6008;
             border-width: 0 1px 1px 0;
             display: inline-block;
@@ -59,7 +62,7 @@
             -webkit-transform: rotate(-135deg);
             margin-bottom: 2px;
         }
-        .headershop__link_panel, .headershop__linka_panela {
+        .headershop__link_panel {
             width: 70px;
             height: 100px;
             background-color: #ffffff;
@@ -80,5 +83,10 @@
     }
     .header-menu__nav-items {
         margin: 0;
+    }
+}
+@media only screen and (max-width: 414px) {
+    #menu {
+        display: none;
     }
 }

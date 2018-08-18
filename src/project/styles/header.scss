@@ -15,14 +15,13 @@
     height: 80px;
     justify-content: space-around;
 }
-
+#hmsvg {
+    display: none;
+}
 .header-menu__nav_logo {
     background-image: url(../../assets/images/matter.png);
     @include LogoPositionDimension;
     margin-top: 20px;
-}
-#hm {
-    display: none;
 }
 .header-menu__nav-items {
     display: flex;

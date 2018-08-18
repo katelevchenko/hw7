@@ -1,8 +1,51 @@
-@media screen and (max-width: 414px) {
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("../../../../assets/fonts/proximanova-regular-webfont.woff2") format("woff2");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url("../../../../assets/fonts/Proxima-Nova-Semibold.woff2") format("woff2");
+    font-weight: 200;
+}
+@media screen and (min-width: 414px) {
     #hm {
-    width: 28px;
-    height: 20px;
-    margin-top: 12px;
-    margin-left: 70px;
+        display: none;
+    }
 }
+@media screen and (max-width: 414px) {
+    .hamburger__panel-icon {
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 35px;
+        height: 24px;
+        background-image: url(../../../../assets/images/burger_menu_icon.png)
+        }
+    .hamburger {
+        display: flex;
+        flex-direction: row;
+        max-width: 250px;
+    }
+    .hamburger__panel {
+        height: 200px;
+        list-style-type: none;
+    }
+    .hamburger__panel_active {
+        .hamburger__panel-icon_shop, .hamburger__panel-icon_fabric, .hamburger__panel-icon_journal, .hamburger__panel-icon_about {
+            text-decoration: none;
+            list-style-type: none;
+            color: #33333a;
+            font-family: "Proxima Nova Semibold";
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 2px;
+            padding: 12px;
+        }
+    }
 }
+    
+                
+
+
+
+
