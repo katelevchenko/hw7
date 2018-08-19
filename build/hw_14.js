@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 401);
+/******/ 	return __webpack_require__(__webpack_require__.s = 400);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9060,8 +9060,7 @@ module.exports = function (regExp, replace) {
 /* 350 */,
 /* 351 */,
 /* 352 */,
-/* 353 */,
-/* 354 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9074,7 +9073,7 @@ exports.Accordion = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(404);
+__webpack_require__(403);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9135,6 +9134,7 @@ var Accordion = exports.Accordion = function () {
 }();
 
 /***/ }),
+/* 354 */,
 /* 355 */,
 /* 356 */,
 /* 357 */,
@@ -9180,29 +9180,34 @@ var Accordion = exports.Accordion = function () {
 /* 397 */,
 /* 398 */,
 /* 399 */,
-/* 400 */,
-/* 401 */
+/* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(402);
+module.exports = __webpack_require__(401);
 
 
 /***/ }),
-/* 402 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(403);
+__webpack_require__(402);
 
-var _accordion = __webpack_require__(354);
+var _accordion = __webpack_require__(353);
 
-var _addAccordion = __webpack_require__(405);
+var _addAccordion = __webpack_require__(404);
 
 var accordion = new _accordion.Accordion(document.querySelector('#accordion1'));
 var addaccordion = new _addAccordion.AddAccordion(document.querySelector('#add-accordion1'));
+
+/***/ }),
+/* 402 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 403 */
@@ -9212,12 +9217,6 @@ var addaccordion = new _addAccordion.AddAccordion(document.querySelector('#add-a
 
 /***/ }),
 /* 404 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9230,9 +9229,9 @@ exports.AddAccordion = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _accordion = __webpack_require__(354);
+var _accordion = __webpack_require__(353);
 
-__webpack_require__(406);
+__webpack_require__(405);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9283,7 +9282,7 @@ var AddAccordion = exports.AddAccordion = function () {
 }();
 
 /***/ }),
-/* 406 */
+/* 405 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

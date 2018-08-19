@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 426);
+/******/ 	return __webpack_require__(__webpack_require__.s = 425);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9046,12 +9046,7 @@ module.exports = function (regExp, replace) {
 /* 336 */,
 /* 337 */,
 /* 338 */,
-/* 339 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 339 */,
 /* 340 */,
 /* 341 */,
 /* 342 */,
@@ -9137,48 +9132,29 @@ module.exports = function (regExp, replace) {
 /* 422 */,
 /* 423 */,
 /* 424 */,
-/* 425 */,
-/* 426 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(427);
+module.exports = __webpack_require__(426);
 
 
 /***/ }),
-/* 427 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(428);
+__webpack_require__(427);
 
-var _accordion_shop = __webpack_require__(429);
+var _accordion_features_care = __webpack_require__(428);
 
-var _accordion_fabric = __webpack_require__(430);
+var _accordion_menu = __webpack_require__(430);
 
-var _accordion_journal = __webpack_require__(431);
+var _photogallery = __webpack_require__(432);
 
-var _accordion_about = __webpack_require__(432);
-
-var _accordion_features_care = __webpack_require__(433);
-
-var _accordion_menu = __webpack_require__(435);
-
-var _photogallery = __webpack_require__(436);
-
-var _hamburger_menu = __webpack_require__(438);
-
-var _counter = __webpack_require__(440);
-
-var accordionshop = new _accordion_shop.AccordionShop(document.querySelector('#shop'));
-
-var accordionfabric = new _accordion_fabric.AccordionFabric(document.querySelector('#fabric'));
-
-var accordionjournal = new _accordion_journal.AccordionJournal(document.querySelector('#journal'));
-
-var accordionabout = new _accordion_about.AccordionAbout(document.querySelector('#about'));
+var _hamburger_menu = __webpack_require__(434);
 
 var accordionfc = new _accordion_features_care.AccordionFC(document.querySelector('#FC'));
 
@@ -9190,360 +9166,14 @@ var photogallery = new _photogallery.PhotoGallery(document.querySelector('#phg')
 
 var hamburger = new _hamburger_menu.Hamburger(document.querySelector('#hm'));
 
-var counter = new _counter.Counter(document.querySelector('#counter'));
-
 /***/ }),
-/* 428 */
+/* 427 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 429 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.AccordionShop = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(339);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var AccordionShop = exports.AccordionShop = function () {
-    function AccordionShop(targetEl) {
-        var _this = this;
-
-        _classCallCheck(this, AccordionShop);
-
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.link.addEventListener('click', function () {
-            return _this.toggle();
-        });
-    }
-
-    _createClass(AccordionShop, [{
-        key: 'accordionshopOpen',
-        value: function accordionshopOpen() {
-            this.target.classList.add('headershop_active');
-            this.isEnabled = true;
-        }
-    }, {
-        key: 'accordionshopClosed',
-        value: function accordionshopClosed() {
-            this.target.classList.remove('headershop_active');
-            this.isEnabled = false;
-        }
-    }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.accordionshopClosed();
-            } else {
-                this.accordionshopOpen();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.item = document.createElement('a');
-            this.item.textContent = 'SHOP';
-            this.item.classList.add('headershop__link_item');
-
-            this.arrow = document.createElement('span');
-            this.arrow.classList.add('headershop__link_arrow');
-
-            this.panel = document.createElement('div');
-            this.panel.textContent = 'Jeans Jackets Pants';
-            this.panel.classList.add('headershop__link_panel');
-
-            this.link = document.createElement('li');
-            this.link.classList.add('headershop__link');
-
-            this.link.appendChild(this.item);
-            this.link.appendChild(this.arrow);
-            this.link.appendChild(this.panel);
-
-            this.headershop = document.createElement('ul');
-            this.headershop.classList.add('headershop');
-            this.headershop.appendChild(this.link);
-
-            this.target.appendChild(this.headershop);
-            this.target.classList.add('headershop');
-        }
-    }]);
-
-    return AccordionShop;
-}();
-
-/***/ }),
-/* 430 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.AccordionFabric = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(339);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var AccordionFabric = exports.AccordionFabric = function () {
-    function AccordionFabric(targetEl) {
-        var _this = this;
-
-        _classCallCheck(this, AccordionFabric);
-
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.link.addEventListener('click', function () {
-            return _this.toggle();
-        });
-    }
-
-    _createClass(AccordionFabric, [{
-        key: 'accordionfabricOpen',
-        value: function accordionfabricOpen() {
-            this.target.classList.add('headershop_active');
-            this.isEnabled = true;
-        }
-    }, {
-        key: 'accordionfabricClosed',
-        value: function accordionfabricClosed() {
-            this.target.classList.remove('headershop_active');
-            this.isEnabled = false;
-        }
-    }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.accordionfabricClosed();
-            } else {
-                this.accordionfabricOpen();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.item = document.createElement('a');
-            this.item.textContent = 'FABRIC';
-            this.item.classList.add('headershop__link_item');
-
-            this.arrow = document.createElement('span');
-            this.arrow.classList.add('headershop__link_arrow');
-
-            this.panel = document.createElement('div');
-            this.panel.textContent = 'Cotton Silk Linen Wool';
-            this.panel.classList.add('headershop__link_panel');
-
-            this.link = document.createElement('li');
-            this.link.classList.add('headershop__link');
-
-            this.link.appendChild(this.item);
-            this.link.appendChild(this.arrow);
-            this.link.appendChild(this.panel);
-
-            this.headershop = document.createElement('ul');
-            this.headershop.classList.add('headershop');
-            this.headershop.appendChild(this.link);
-
-            this.target.appendChild(this.headershop);
-            this.target.classList.add('headershop');
-        }
-    }]);
-
-    return AccordionFabric;
-}();
-
-/***/ }),
-/* 431 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.AccordionJournal = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(339);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var AccordionJournal = exports.AccordionJournal = function () {
-    function AccordionJournal(targetEl) {
-        var _this = this;
-
-        _classCallCheck(this, AccordionJournal);
-
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.link.addEventListener('click', function () {
-            return _this.toggle();
-        });
-    }
-
-    _createClass(AccordionJournal, [{
-        key: 'accordionjournalOpen',
-        value: function accordionjournalOpen() {
-            this.target.classList.add('headershop_active');
-            this.isEnabled = true;
-        }
-    }, {
-        key: 'accordionjournalClosed',
-        value: function accordionjournalClosed() {
-            this.target.classList.remove('headershop_active');
-            this.isEnabled = false;
-        }
-    }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.accordionjournalClosed();
-            } else {
-                this.accordionjournalOpen();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.item = document.createElement('a');
-            this.item.textContent = 'JOURNAL';
-            this.item.classList.add('headershop__link_item');
-
-            this.arrow = document.createElement('span');
-            this.arrow.classList.add('headershop__link_arrow');
-
-            this.panel = document.createElement('div');
-            this.panel.textContent = 'Jeans Jackets Pants';
-            this.panel.classList.add('headershop__link_panel');
-
-            this.link = document.createElement('li');
-            this.link.classList.add('headershop__link');
-
-            this.link.appendChild(this.item);
-            this.link.appendChild(this.arrow);
-            this.link.appendChild(this.panel);
-
-            this.headershop = document.createElement('ul');
-            this.headershop.classList.add('headershop');
-            this.headershop.appendChild(this.link);
-
-            this.target.appendChild(this.headershop);
-            this.target.classList.add('headershop');
-        }
-    }]);
-
-    return AccordionJournal;
-}();
-
-/***/ }),
-/* 432 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.AccordionAbout = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(339);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var AccordionAbout = exports.AccordionAbout = function () {
-    function AccordionAbout(targetEl) {
-        var _this = this;
-
-        _classCallCheck(this, AccordionAbout);
-
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.link.addEventListener('click', function () {
-            return _this.toggle();
-        });
-    }
-
-    _createClass(AccordionAbout, [{
-        key: 'accordionaboutOpen',
-        value: function accordionaboutOpen() {
-            this.target.classList.add('headershop_active');
-            this.isEnabled = true;
-        }
-    }, {
-        key: 'accordionaboutClosed',
-        value: function accordionaboutClosed() {
-            this.target.classList.remove('headershop_active');
-            this.isEnabled = false;
-        }
-    }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.accordionaboutClosed();
-            } else {
-                this.accordionaboutOpen();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.item = document.createElement('a');
-            this.item.textContent = 'ABOUT';
-            this.item.classList.add('headershop__link_item');
-
-            this.arrow = document.createElement('span');
-            this.arrow.classList.add('headershop__link_arrow');
-
-            this.panel = document.createElement('div');
-            this.panel.textContent = 'Matter is Matter';
-            this.panel.classList.add('headershop__link_panel');
-
-            this.link = document.createElement('li');
-            this.link.classList.add('headershop__link');
-
-            this.link.appendChild(this.item);
-            this.link.appendChild(this.arrow);
-            this.link.appendChild(this.panel);
-
-            this.headershop = document.createElement('ul');
-            this.headershop.classList.add('headershop');
-            this.headershop.appendChild(this.link);
-
-            this.target.appendChild(this.headershop);
-            this.target.classList.add('headershop');
-        }
-    }]);
-
-    return AccordionAbout;
-}();
-
-/***/ }),
-/* 433 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9556,7 +9186,7 @@ exports.AccordionFC2 = exports.AccordionFC = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(434);
+__webpack_require__(429);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9685,13 +9315,13 @@ var AccordionFC2 = exports.AccordionFC2 = function () {
 }();
 
 /***/ }),
-/* 434 */
+/* 429 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 435 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9704,44 +9334,53 @@ exports.AccordionMenu = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(339);
+__webpack_require__(431);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var AccordionMenu = exports.AccordionMenu = function () {
-    function AccordionMenu(targetEl) {
-        var _this = this;
-
+    function AccordionMenu(targetElement) {
         _classCallCheck(this, AccordionMenu);
 
-        this.target = targetEl;
-        this.isEnabled = false;
+        this.target = targetElement;
         this.render();
-        this.headershop.addEventListener('click', function () {
-            return _this.toggle();
-        });
+        this.attachEvents();
     }
 
     _createClass(AccordionMenu, [{
-        key: 'accordionmenuOpen',
-        value: function accordionmenuOpen() {
-            this.headershop.classList.add('headershop__link_active');
-            this.isEnabled = true;
+        key: 'MenuActive',
+        value: function MenuActive(menu, styleName) {
+            menu.classList.add(styleName);
         }
     }, {
-        key: 'accordionmenuClosed',
-        value: function accordionmenuClosed() {
+        key: 'resetMenuActive',
+        value: function resetMenuActive() {
             this.headershop.classList.remove('headershop__link_active');
-            this.isEnabled = false;
+            this.headershopfabric.classList.remove('headershop__link_active');
+            this.headershopjournal.classList.remove('headershop__link_active');
+            this.headershopabout.classList.remove('headershop__link_active');
         }
     }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.accordionmenuClosed();
-            } else {
-                this.accordionmenuOpen();
-            }
+        key: 'attachEvents',
+        value: function attachEvents() {
+            var _this = this;
+
+            this.headershop.addEventListener('click', function () {
+                _this.resetMenuActive();
+                _this.MenuActive(_this.headershop, 'headershop__link_active');
+            });
+            this.headershopfabric.addEventListener('click', function () {
+                _this.resetMenuActive();
+                _this.MenuActive(_this.headershopfabric, 'headershop__link_active');
+            });
+            this.headershopjournal.addEventListener('click', function () {
+                _this.resetMenuActive();
+                _this.MenuActive(_this.headershopjournal, 'headershop__link_active');
+            });
+            this.headershopabout.addEventListener('click', function () {
+                _this.resetMenuActive();
+                _this.MenuActive(_this.headershopabout, 'headershop__link_active');
+            });
         }
     }, {
         key: 'render',
@@ -9754,7 +9393,7 @@ var AccordionMenu = exports.AccordionMenu = function () {
             this.arrow.classList.add('headershop__link_arrow');
 
             this.panel = document.createElement('div');
-            this.panel.textContent = 'Matter is Matter';
+            this.panel.textContent = 'Jeans Jackets Pants';
             this.panel.classList.add('headershop__link_panel');
 
             this.link = document.createElement('li');
@@ -9765,33 +9404,76 @@ var AccordionMenu = exports.AccordionMenu = function () {
 
             this.headershop = document.createElement('ul');
             this.headershop.classList.add('headershop__link');
+            this.headershop.classList.add('headershop__link_ctive');
             this.headershop.appendChild(this.link);
 
+            this.itemfabric = document.createElement('a');
+            this.itemfabric.textContent = 'FABRIC';
+            this.itemfabric.classList.add('headershop__link_item');
+
+            this.arrowfabric = document.createElement('span');
+            this.arrowfabric.classList.add('headershop__link_arrow');
+
+            this.panelfabric = document.createElement('div');
+            this.panelfabric.textContent = 'Cotton Silk Linen Wool';
+            this.panelfabric.classList.add('headershop__link_panel');
+
+            this.linkfabric = document.createElement('li');
+
+            this.linkfabric.appendChild(this.itemfabric);
+            this.linkfabric.appendChild(this.arrowfabric);
+            this.linkfabric.appendChild(this.panelfabric);
+
+            this.headershopfabric = document.createElement('ul');
+            this.headershopfabric.classList.add('headershop__link');
+            this.headershopfabric.appendChild(this.linkfabric);
+
+            this.itemjournal = document.createElement('a');
+            this.itemjournal.textContent = 'JOURNAL';
+            this.itemjournal.classList.add('headershop__link_item');
+
+            this.arrowjournal = document.createElement('span');
+            this.arrowjournal.classList.add('headershop__link_arrow');
+
+            this.paneljournal = document.createElement('div');
+            this.paneljournal.textContent = 'Jeans Jackets Pants';
+            this.paneljournal.classList.add('headershop__link_panel');
+
+            this.linkjournal = document.createElement('li');
+
+            this.linkjournal.appendChild(this.itemjournal);
+            this.linkjournal.appendChild(this.arrowjournal);
+            this.linkjournal.appendChild(this.paneljournal);
+
+            this.headershopjournal = document.createElement('ul');
+            this.headershopjournal.classList.add('headershop__link');
+            this.headershopjournal.appendChild(this.linkjournal);
+
+            this.itemabout = document.createElement('a');
+            this.itemabout.textContent = 'ABOUT';
+            this.itemabout.classList.add('headershop__link_item');
+
+            this.arrowabout = document.createElement('span');
+            this.arrowabout.classList.add('headershop__link_arrow');
+
+            this.panelabout = document.createElement('div');
+            this.panelabout.textContent = 'Matter is Matter';
+            this.panelabout.classList.add('headershop__link_panel');
+
+            this.linkabout = document.createElement('li');
+
+            this.linkabout.appendChild(this.itemabout);
+            this.linkabout.appendChild(this.arrowabout);
+            this.linkabout.appendChild(this.panelabout);
+
+            this.headershopabout = document.createElement('ul');
+            this.headershopabout.classList.add('headershop__link');
+            this.headershopabout.appendChild(this.linkabout);
+
             this.target.appendChild(this.headershop);
-
-            this.itema = document.createElement('a');
-            this.itema.textContent = 'ABOUT';
-            this.itema.classList.add('headershop__linka_itema');
-
-            this.arrowa = document.createElement('span');
-            this.arrowa.classList.add('headershop__linka_arrowa');
-
-            this.panela = document.createElement('div');
-            this.panela.textContent = 'Matter is Matter';
-            this.panela.classList.add('headershop__linka_panela');
-
-            this.linka = document.createElement('li');
-            this.linka.classList.add('headershop__linka');
-
-            this.linka.appendChild(this.itema);
-            this.linka.appendChild(this.arrowa);
-            this.linka.appendChild(this.panela);
-
-            this.headershopa = document.createElement('ul');
-            this.headershopa.classList.add('headershopa__linka');
-            this.headershopa.appendChild(this.linka);
-
-            this.target.appendChild(this.headershopa);
+            this.target.appendChild(this.headershopfabric);
+            this.target.appendChild(this.headershopjournal);
+            this.target.appendChild(this.headershopabout);
         }
     }]);
 
@@ -9799,7 +9481,13 @@ var AccordionMenu = exports.AccordionMenu = function () {
 }();
 
 /***/ }),
-/* 436 */
+/* 431 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9812,7 +9500,7 @@ exports.PhotoGallery = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(437);
+__webpack_require__(433);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9903,176 +9591,125 @@ var PhotoGallery = exports.PhotoGallery = function () {
 }();
 
 /***/ }),
-/* 437 */
+/* 433 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 438 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 exports.Hamburger = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(439);
+__webpack_require__(435);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Hamburger = exports.Hamburger = function () {
-    function Hamburger(targetEl) {
-        var _this = this;
+        function Hamburger(targetEl) {
+                var _this = this;
 
-        _classCallCheck(this, Hamburger);
+                _classCallCheck(this, Hamburger);
 
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.hamburger.addEventListener('click', function () {
-            return _this.toggle();
-        });
-    }
-
-    _createClass(Hamburger, [{
-        key: 'hamburgermenuOpen',
-        value: function hamburgermenuOpen() {
-            this.target.classList.add('hamburger_active');
-            this.isEnabled = true;
+                this.target = targetEl;
+                this.isEnabled = false;
+                this.render();
+                this.menuicon.addEventListener('click', function () {
+                        return _this.toggle();
+                });
         }
-    }, {
-        key: 'hamburgermenuClosed',
-        value: function hamburgermenuClosed() {
-            this.target.classList.remove('hamburger_active');
-            this.isEnabled = false;
-        }
-    }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.hamburgermenuClosed();
-            } else {
-                this.hamburgermenuOpen();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.hamburger = document.createElement('div');
-            this.menu = document.getElementById('hm');
 
-            this.panel = document.createElement('div');
+        _createClass(Hamburger, [{
+                key: 'hamburgermenuOpen',
+                value: function hamburgermenuOpen() {
+                        this.target.classList.add('hamburger_active');
+                        this.isEnabled = true;
+                }
+        }, {
+                key: 'hamburgermenuClosed',
+                value: function hamburgermenuClosed() {
+                        this.target.classList.remove('hamburger_active');
+                        this.isEnabled = false;
+                }
+        }, {
+                key: 'toggle',
+                value: function toggle() {
+                        if (this.isEnabled) {
+                                this.hamburgermenuClosed();
+                        } else {
+                                this.hamburgermenuOpen();
+                        }
+                }
+        }, {
+                key: 'render',
+                value: function render() {
 
-            this.hamburger.classList.add('hamburger');
-            this.menu.classList.add('hamburger_menu');
-            this.panel.classList.add('hamburger_panel');
+                        this.menuicon = document.createElement('div');
+                        this.menuicon.classList.add('hamburger__panel-icon');
+                        this.target.appendChild(this.menuicon);
 
-            this.panel.textContent = 'Explore the latest fashion trends and fashion news on Vogue';
+                        this.panel = document.createElement('div');
+                        this.panel.classList.add('hamburger__panel');
+                        this.target.appendChild(this.panel);
 
-            this.target.appendChild(this.menu);
-            this.target.appendChild(this.panel);
-            this.target.classList.add('hamburger');
-        }
-    }]);
+                        this.menubar = document.createElement('ul');
+                        this.menubar.classList.add('hamburger__panel-list');
+                        this.panel.appendChild(this.menubar);
 
-    return Hamburger;
+                        this.menushop = document.createElement('li');
+                        this.menushop.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menushop);
+
+                        this.elementshop = document.createElement('a');
+                        this.elementshop.classList.add('hamburger__panel-list_shop');
+                        this.elementshop.textContent('SHOP');
+                        this.menushop.appendChild(this.elementshop);
+
+                        this.menufabric = document.createElement('li');
+                        this.menufabric.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menufabric);
+
+                        this.elementfabric = document.createElement('a');
+                        this.elementfabric.classList.add('hamburger__panel-list_fabric');
+                        this.elementfabric.textContent('FABRIC');
+                        this.menufabric.appendChild(this.elementfabric);
+
+                        this.menujournal = document.createElement('li');
+                        this.menujournal.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menujournal);
+
+                        this.elementjournal = document.createElement('a');
+                        this.elementjournal.classList.add('hamburger__panel-list_journal');
+                        this.elementjournal.textContent('JOURNAL');
+                        this.menujournal.appendChild(this.elementjournal);
+
+                        this.menuabout = document.createElement('li');
+                        this.menuabout.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menuabout);
+
+                        this.elementabout = document.createElement('a');
+                        this.elementabout.classList.add('hamburger__panel-list_about');
+                        this.elementabout.textContent('ABOUT');
+                        this.menuabout.appendChild(this.elementabout);
+
+                        this.target.classList.add('hamburger');
+                }
+        }]);
+
+        return Hamburger;
 }();
 
 /***/ }),
-/* 439 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 440 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Counter = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-__webpack_require__(441);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Counter = exports.Counter = function () {
-    function Counter(targetEl) {
-        var _this = this;
-
-        _classCallCheck(this, Counter);
-
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.down.addEventListener('click', function () {
-            return _this.counter();
-        });
-        this.up.addEventListener('click', function () {
-            return _this.counter();
-        });
-    }
-
-    _createClass(Counter, [{
-        key: 'counterup',
-        value: function counterup() {
-            this.number.innerHTML = +this.number.innerHTML + 1;
-        }
-    }, {
-        key: 'counterdown',
-        value: function counterdown() {
-            this.number.innerHTML = +this.number.innerHTML - 1;
-        }
-    }, {
-        key: 'counter',
-        value: function counter() {
-            if (event.target.classList('.counter__up')) {
-                counterup();
-            } else if (event.target.classList('.counter__down')) {
-                counterdown();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.counter = document.createElement('div');
-            this.counter.classList.add('counter');
-
-            this.down = document.createElement('span');
-            this.down.classList.add('counter__down');
-            this.counter.appendChild(this.down);
-
-            this.number = document.createElement('span');
-            this.number.classList.add('counter__number');
-            this.number.textContent = '0';
-            this.counter.appendChild(this.number);
-
-            this.up = document.createElement('span');
-            this.up.classList.add('counter__up');
-            this.counter.appendChild(this.up);
-
-            this.target.classList.add('counter__down');
-            this.target.classList.add('counter__up');
-        }
-    }]);
-
-    return Counter;
-}();
-
-/***/ }),
-/* 441 */
+/* 435 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
