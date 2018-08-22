@@ -9604,7 +9604,7 @@ var PhotoGallery = exports.PhotoGallery = function () {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 exports.Hamburger = undefined;
 
@@ -9615,86 +9615,97 @@ __webpack_require__(435);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Hamburger = exports.Hamburger = function () {
-    function Hamburger(targetEl) {
-        var _this = this;
+        function Hamburger(targetEl) {
+                var _this = this;
 
-        _classCallCheck(this, Hamburger);
+                _classCallCheck(this, Hamburger);
 
-        this.target = targetEl;
-        this.isEnabled = false;
-        this.render();
-        this.menuicon.addEventListener('click', function () {
-            return _this.toggle();
-        });
-    }
-
-    _createClass(Hamburger, [{
-        key: 'hamburgermenuOpen',
-        value: function hamburgermenuOpen() {
-            this.menuicon.classList.add('hamburger_panel_active');
-            this.isEnabled = true;
+                this.target = targetEl;
+                this.isEnabled = false;
+                this.render();
+                this.menuicon.addEventListener('click', function () {
+                        return _this.toggle();
+                });
         }
-    }, {
-        key: 'hamburgermenuClosed',
-        value: function hamburgermenuClosed() {
-            this.menuicon.classList.remove('hamburger_panel_active');
-            this.isEnabled = false;
-        }
-    }, {
-        key: 'toggle',
-        value: function toggle() {
-            if (this.isEnabled) {
-                this.hamburgermenuClosed();
-            } else {
-                this.hamburgermenuOpen();
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            this.hamburger = document.createElement('div');
-            this.menuicon = document.createElement('div');
-            this.panel = document.createElement('div');
-            this.menubar = document.createElement('ul');
-            this.menushop = document.createElement('li');
-            this.elementshop = document.createElement('a');
-            this.menufabric = document.createElement('li');
-            this.elementfabric = document.createElement('a');
-            this.menujournal = document.createElement('li');
-            this.elementjournal = document.createElement('a');
-            this.menuabout = document.createElement('li');
-            this.elementabout = document.createElement('a');
 
-            this.hamburger.classList.add('hamburger');
-            this.menuicon.classList.add('hamburger__panel-icon');
-            this.panel.classList.add('hamburger__panel');
-            this.menubar.classList.add('hamburger__panel');
-            this.menushop.classList.add('hamburger__panel-icon');
-            this.elementshop.classList.add('hamburger__panel-icon_shop');
-            this.menufabric.classList.add('hamburger__panel-icon');
-            this.elementfabric.classList.add('hamburger__panel-icon_fabric');
-            this.menujournal.classList.add('hamburger__panel-icon');
-            this.elementjournal.classList.add('hamburger__panel-icon_journal');
-            this.menuabout.classList.add('hamburger__panel-icon');
-            this.elementabout.classList.add('hamburger__panel-icon_about');
+        _createClass(Hamburger, [{
+                key: 'hamburgermenuOpen',
+                value: function hamburgermenuOpen() {
+                        this.target.classList.add('hamburger_active');
+                        this.isEnabled = true;
+                }
+        }, {
+                key: 'hamburgermenuClosed',
+                value: function hamburgermenuClosed() {
+                        this.target.classList.remove('hamburger_active');
+                        this.isEnabled = false;
+                }
+        }, {
+                key: 'toggle',
+                value: function toggle() {
+                        if (this.isEnabled) {
+                                this.hamburgermenuClosed();
+                        } else {
+                                this.hamburgermenuOpen();
+                        }
+                }
+        }, {
+                key: 'render',
+                value: function render() {
 
-            this.hamburger.appendChild(this.panel);
-            this.panel.appendChild(this.menuicon);
-            this.menuicon.appendChild(this.menubar);
-            this.menubar.appendChild(this.menushop);
-            this.menubar.appendChild(this.menufabric);
-            this.menubar.appendChild(this.menujournal);
-            this.menubar.appendChild(this.menuabout);
-            this.menushop.appendChild(this.elementshop);
-            this.menufabric.appendChild(this.elementfabric);
-            this.menujournal.appendChild(this.elementjournal);
-            this.menuabout.appendChild(this.elementabout);
+                        this.menuicon = document.createElement('div');
+                        this.menuicon.classList.add('hamburger__panel-icon');
+                        this.target.appendChild(this.menuicon);
 
-            this.target.appendChild(this.hamburger);
-        }
-    }]);
+                        this.panel = document.createElement('div');
+                        this.panel.classList.add('hamburger__panel');
+                        this.target.appendChild(this.panel);
 
-    return Hamburger;
+                        this.menubar = document.createElement('ul');
+                        this.menubar.classList.add('hamburger__panel-lista');
+                        this.panel.appendChild(this.menubar);
+
+                        this.menushop = document.createElement('li');
+                        this.menushop.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menushop);
+
+                        this.elementshop = document.createElement('a');
+                        this.elementshop.classList.add('hamburger__panel-list_shop');
+                        this.elementshop.textContent = 'SHOP';
+                        this.menushop.appendChild(this.elementshop);
+
+                        this.menufabric = document.createElement('li');
+                        this.menufabric.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menufabric);
+
+                        this.elementfabric = document.createElement('a');
+                        this.elementfabric.classList.add('hamburger__panel-list_fabric');
+                        this.elementfabric.textContent = 'FABRIC';
+                        this.menufabric.appendChild(this.elementfabric);
+
+                        this.menujournal = document.createElement('li');
+                        this.menujournal.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menujournal);
+
+                        this.elementjournal = document.createElement('a');
+                        this.elementjournal.classList.add('hamburger__panel-list_journal');
+                        this.elementjournal.textContent = 'JOURNAL';
+                        this.menujournal.appendChild(this.elementjournal);
+
+                        this.menuabout = document.createElement('li');
+                        this.menuabout.classList.add('hamburger__panel-list');
+                        this.menubar.appendChild(this.menuabout);
+
+                        this.elementabout = document.createElement('a');
+                        this.elementabout.classList.add('hamburger__panel-list_about');
+                        this.elementabout.textContent = 'ABOUT';
+                        this.menuabout.appendChild(this.elementabout);
+
+                        this.target.classList.add('hamburger');
+                }
+        }]);
+
+        return Hamburger;
 }();
 
 /***/ }),
